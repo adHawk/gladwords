@@ -2,6 +2,10 @@
 
 A saner Ruby wrapper over the AdWords API, using [ROM.rb](https://rom-rb.org).
 
+# Clout
+
+[![CircleCI](https://circleci.com/gh/adHawk/gladwords.svg?style=svg)](https://circleci.com/gh/adHawk/gladwords)
+
 ## Usage
 
 ```ruby
