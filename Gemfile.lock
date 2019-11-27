@@ -23,7 +23,7 @@ GIT
 PATH
   remote: .
   specs:
-    gladwords (1.0.0)
+    gladwords (1.0.1)
       google-adwords-api
       rom (~> 4.2.0)
 

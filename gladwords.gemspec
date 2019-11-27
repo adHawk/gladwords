@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.email         = ['ian@tryadhawk.com', 'patrick@tryadhawk.com']
   spec.summary       = 'AdWords support for ROM.rb'
   spec.description   = spec.summary
-  spec.homepage      = 'https://github/adhawk/gladwords'
+  spec.homepage      = 'https://github.com/adHawk/gladwords'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0")
