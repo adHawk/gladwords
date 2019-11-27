@@ -1,14 +1,14 @@
 # frozen_string_literal: true
 
 RSpec.describe Gladwords::Commands::Create do
-  include_context :labels
-
-  let(:service) { label_service }
-  let(:relation) { labels }
+  include_context 'labels'
 
   subject(:command) do
     relation.command(:create)
   end
+
+  let(:service) { label_service }
+  let(:relation) { labels }
 
   context 'when provided a single tuple' do
     before do

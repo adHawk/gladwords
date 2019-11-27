@@ -1,14 +1,14 @@
 # frozen_string_literal: true
 
 RSpec.describe Gladwords::Commands::Delete do
-  include_context :labels
-
-  let(:service) { label_service }
-  let(:relation) { labels }
+  include_context 'labels'
 
   subject(:command) do
     relation.command(:delete)
   end
+
+  let(:service) { label_service }
+  let(:relation) { labels }
 
   before do
     allow(service).to receive(:get).and_return(entries: [{ id: '1' }])

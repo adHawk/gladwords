@@ -10,20 +10,20 @@ module Gladwords
 
     describe '#call' do
       declarations = {
-        String => [
-          :name,
-          :status,
-          :serving_status,
-          :start_date,
-          :end_date,
-          :ad_serving_optimization_status,
-          :advertising_channel_type,
-          :advertising_channel_sub_type,
-          :campaign_trial_type,
-          :tracking_url_template,
-          :final_url_suffix
+        String => %i[
+          name
+          status
+          serving_status
+          start_date
+          end_date
+          ad_serving_optimization_status
+          advertising_channel_type
+          advertising_channel_sub_type
+          campaign_trial_type
+          tracking_url_template
+          final_url_suffix
         ],
-        Integer => [:id, :base_campaign_id, :campaign_group_id]
+        Integer => %i[id base_campaign_id campaign_group_id]
       }
 
       declarations.each do |primitive, fields|

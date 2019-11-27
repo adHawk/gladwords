@@ -1,14 +1,14 @@
 # frozen_string_literal: true
 
 RSpec.describe Gladwords::Commands::Create do
-  include_context :labels
-
-  let(:service) { label_service }
-  let(:relation) { labels }
+  include_context 'labels'
 
   subject(:command) do
     relation.command(:create)
   end
+
+  let(:service) { label_service }
+  let(:relation) { labels }
 
   it 'creates a label' do
     name = SecureRandom.hex

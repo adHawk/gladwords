@@ -2,7 +2,7 @@
 
 module Gladwords
   RSpec.describe Relation::AssociationMethods do
-    include_context :campaigns
+    include_context 'campaigns'
 
     context 'when the relation is one-to-many' do
       subject { campaigns }

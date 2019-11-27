@@ -3,14 +3,14 @@
 require 'securerandom'
 
 RSpec.describe Gladwords::Commands::Update do
-  include_context :campaigns
-
-  let(:service) { campaign_service }
-  let(:relation) { campaigns }
+  include_context 'campaigns'
 
   subject(:command) do
     relation.command(:update)
   end
+
+  let(:service) { campaign_service }
+  let(:relation) { campaigns }
 
   context 'when provided a single tuple' do
     before do

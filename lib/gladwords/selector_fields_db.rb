@@ -9,7 +9,7 @@ module Gladwords
   module_function
 
   def supported_versions
-    @supported_versions ||= [:v201806, :v201809]
+    @supported_versions ||= %i[v201806 v201809]
   end
 
   def selector_fields_db(version)

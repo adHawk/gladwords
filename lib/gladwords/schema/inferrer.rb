@@ -9,11 +9,11 @@ module Gladwords
     #
     # @api public
     class Inferrer < ROM::Schema::Inferrer
-      attributes_inferrer ->(schema, gateway, _options) do
+      attributes_inferrer lambda { |schema, gateway, _options|
         # builder = TypeBuilder[gateway.database_type]
         inferrer = AttributesInferrer.new
         inferrer.call(schema, gateway)
-      end
+      }
     end
   end
 end

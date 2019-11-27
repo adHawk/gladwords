@@ -1,0 +1,56 @@
+inherit_from: .rubocop_todo.yml
+
+require:
+  - 'rubocop-performance'
+
+#####################
+# ALL
+#####################
+
+AllCops:
+  UseCache: true
+  CacheRootDirectory: './tmp'
+  MaxFilesInCache: 10000
+  Exclude:
+    - 'spec/fixtures/**/*'
+    - 'tmp/**/*'
+    - 'bin/*'
+  TargetRubyVersion: 2.5
+  DisplayCopNames: true
+
+#####################
+# STYLE
+#####################
+
+Style/BlockDelimiters:
+  Enabled: false
+
+Style/ClassAndModuleChildren:
+  Exclude:
+    - 'spec/**/*_spec.rb'
+
+Style/Documentation:
+  Enabled: false
+
+Style/LambdaCall:
+  Enabled: false
+
+Style/Lambda:
+  Enabled: false
+
+Style/SymbolArray:
+  Enabled: false
+
+#####################
+# METRICS
+#####################
+
+Metrics/BlockLength:
+  Exclude:
+    - 'Rakefile'
+    - '**/*.rake'
+    - 'spec/**/*'
+
+Metrics/ModuleLength:
+  Exclude:
+    - 'spec/**/*_spec.rb'

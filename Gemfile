@@ -8,7 +8,11 @@ group :test do
   gem 'google-adwords-api', github: 'ianks/google-api-ads-ruby', branch: 'enums-generated'
   gem 'pry-byebug'
   gem 'rspec'
+end
+
+group :development do
   gem 'rubocop'
+  gem 'rubocop-performance'
 end
 
 group :local do

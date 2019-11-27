@@ -32,7 +32,9 @@ module AdwordsHelpers
   def gimme_adwords
     @gimme_adwords ||= begin
                          adwords = AdwordsApi::Api.new(API_CONFIG)
-                         adwords.logger = Logger.new('log/test.log') if Dir.exist?('log')
+                         if Dir.exist?('log')
+                           adwords.logger = Logger.new('log/test.log')
+                         end
                          adwords
                        end
   end

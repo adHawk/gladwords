@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 RSpec.describe Gladwords::Relation do
-  include_context :campaigns
+  include_context 'campaigns'
 
   subject { campaigns }
 
@@ -179,7 +179,7 @@ RSpec.describe Gladwords::Relation do
   end
 
   describe '#request' do
-    it 'it raises when the method does not exist' do
+    it 'raises when the method does not exist' do
       expect { subject.request(:bad_method) }
         .to raise_error described_class::InvalidRequestMethodError
     end

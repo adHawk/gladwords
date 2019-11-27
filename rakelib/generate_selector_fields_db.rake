@@ -36,7 +36,9 @@ task :generate_selector_fields_db do
 
       service_name_node = service_name_node.previous_sibling until service_name_node.text =~ /\w+Service$/
 
-      next unless service_name_node.attributes['id'].value.start_with?(adwords_version)
+      unless service_name_node.attributes['id'].value.start_with?(adwords_version)
+        next
+      end
 
       service_name = inflector.underscore(service_name_node.text)
       service_name = service_name.gsub('_service', '')

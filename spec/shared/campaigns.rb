@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-RSpec.shared_context :campaigns do
+RSpec.shared_context 'campaigns' do
   let(:client) { gimme_adwords }
   let(:configuration) do
     ROM::Configuration.new(:adwords, client: client) do |config|

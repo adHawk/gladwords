@@ -2,8 +2,8 @@
 
 RSpec.describe Gladwords do
   describe '.selector_fields_db' do
-    [:v201806, :v201809].each do |version|
-      let(:db) { Gladwords.selector_fields_db(version) }
+    %i[v201806 v201809].each do |version|
+      let(:db) { described_class.selector_fields_db(version) }
 
       let(:field_entries) { db.values.map(&:values).flatten }
 

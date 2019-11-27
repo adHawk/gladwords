@@ -1,14 +1,14 @@
 # frozen_string_literal: true
 
 RSpec.describe Gladwords::Commands::Delete do
-  include_context :labels
-
-  let(:service) { label_service }
-  let(:relation) { labels }
+  include_context 'labels'
 
   subject(:command) do
     relation.command(:delete)
   end
+
+  let(:service) { label_service }
+  let(:relation) { labels }
 
   it 'deletes the label' do
     label = relation.command(:create).call(name: SecureRandom.hex, xsi_type: 'TextLabel')
