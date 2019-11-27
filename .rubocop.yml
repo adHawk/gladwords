@@ -12,6 +12,7 @@ AllCops:
   CacheRootDirectory: './tmp'
   MaxFilesInCache: 10000
   Exclude:
+    - 'vendor/**/*'
     - 'spec/fixtures/**/*'
     - 'tmp/**/*'
     - 'bin/*'
