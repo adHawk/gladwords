@@ -9,6 +9,7 @@ module AdwordsApi
 end
 
 module AdwordsHelpers
+  # This is a test account, i.e. no real ad spend
   API_CONFIG = {
     authentication: {
       method: 'OAuth2',

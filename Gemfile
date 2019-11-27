@@ -10,3 +10,7 @@ group :test do
   gem 'rspec'
   gem 'rubocop'
 end
+
+group :local do
+  gem 'solargraph'
+end
