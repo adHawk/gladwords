@@ -1,0 +1,3882 @@
+{
+  "account_labels": {
+    "get": [
+      {
+        "field": "LabelId",
+        "populates": "AccountLabel.id",
+        "filterable": true
+      },
+      {
+        "field": "LabelName",
+        "populates": "AccountLabel.name",
+        "filterable": false
+      }
+    ]
+  },
+  "ad_customizer_feeds": {
+    "get": [
+      {
+        "field": "FeedAttributes",
+        "populates": "AdCustomizerFeed.feedAttributes",
+        "filterable": false
+      },
+      {
+        "field": "FeedId",
+        "populates": "AdCustomizerFeed.feedId",
+        "filterable": true
+      },
+      {
+        "field": "FeedName",
+        "populates": "AdCustomizerFeed.feedName",
+        "filterable": true
+      },
+      {
+        "field": "FeedStatus",
+        "populates": "AdCustomizerFeed.feedStatus",
+        "filterable": true
+      }
+    ]
+  },
+  "ad_group_ads": {
+    "get": [
+      {
+        "field": "AccentColor",
+        "populates": "ResponsiveDisplayAd.accentColor",
+        "filterable": true
+      },
+      {
+        "field": "AdGroupId",
+        "populates": "AdGroupAd.adGroupId",
+        "filterable": true
+      },
+      {
+        "field": "AdType",
+        "populates": "Ad.type",
+        "filterable": true
+      },
+      {
+        "field": "AdvertisingId",
+        "populates": "Video.advertisingId",
+        "filterable": false
+      },
+      {
+        "field": "AllowFlexibleColor",
+        "populates": "ResponsiveDisplayAd.allowFlexibleColor",
+        "filterable": true
+      },
+      {
+        "field": "Automated",
+        "populates": "Ad.automated",
+        "filterable": true
+      },
+      {
+        "field": "BaseAdGroupId",
+        "populates": "AdGroupAd.baseAdGroupId",
+        "filterable": true
+      },
+      {
+        "field": "BaseCampaignId",
+        "populates": "AdGroupAd.baseCampaignId",
+        "filterable": true
+      },
+      {
+        "field": "BusinessName",
+        "populates": "ResponsiveDisplayAd.businessName",
+        "filterable": true
+      },
+      {
+        "field": "CallOnlyAdBusinessName",
+        "populates": "CallOnlyAd.businessName",
+        "filterable": true
+      },
+      {
+        "field": "CallOnlyAdCallTracked",
+        "populates": "CallOnlyAd.callTracked",
+        "filterable": false
+      },
+      {
+        "field": "CallOnlyAdConversionTypeId",
+        "populates": "CallOnlyAd.conversionTypeId",
+        "filterable": false
+      },
+      {
+        "field": "CallOnlyAdCountryCode",
+        "populates": "CallOnlyAd.countryCode",
+        "filterable": true
+      },
+      {
+        "field": "CallOnlyAdDescription1",
+        "populates": "CallOnlyAd.description1",
+        "filterable": true
+      },
+      {
+        "field": "CallOnlyAdDescription2",
+        "populates": "CallOnlyAd.description2",
+        "filterable": true
+      },
+      {
+        "field": "CallOnlyAdDisableCallConversion",
+        "populates": "CallOnlyAd.disableCallConversion",
+        "filterable": false
+      },
+      {
+        "field": "CallOnlyAdPhoneNumber",
+        "populates": "CallOnlyAd.phoneNumber",
+        "filterable": true
+      },
+      {
+        "field": "CallOnlyAdPhoneNumberVerificationUrl",
+        "populates": "CallOnlyAd.phoneNumberVerificationUrl",
+        "filterable": true
+      },
+      {
+        "field": "CallToActionText",
+        "populates": "ResponsiveDisplayAd.callToActionText",
+        "filterable": true
+      },
+      {
+        "field": "CreationTime",
+        "populates": "Media.creationTime",
+        "filterable": false
+      },
+      {
+        "field": "CreativeFinalAppUrls",
+        "populates": "Ad.finalAppUrls",
+        "filterable": true
+      },
+      {
+        "field": "CreativeFinalMobileUrls",
+        "populates": "Ad.finalMobileUrls",
+        "filterable": true
+      },
+      {
+        "field": "CreativeFinalUrlSuffix",
+        "populates": "Ad.finalUrlSuffix",
+        "filterable": true
+      },
+      {
+        "field": "CreativeFinalUrls",
+        "populates": "Ad.finalUrls",
+        "filterable": true
+      },
+      {
+        "field": "CreativeTrackingUrlTemplate",
+        "populates": "Ad.trackingUrlTemplate",
+        "filterable": true
+      },
+      {
+        "field": "CreativeUrlCustomParameters",
+        "populates": "Ad.urlCustomParameters",
+        "filterable": true
+      },
+      {
+        "field": "Description",
+        "populates": "ExpandedDynamicSearchAd.description",
+        "filterable": true
+      },
+      {
+        "field": "Description",
+        "populates": "ExpandedTextAd.description",
+        "filterable": true
+      },
+      {
+        "field": "Description",
+        "populates": "ResponsiveDisplayAd.description",
+        "filterable": true
+      },
+      {
+        "field": "Description1",
+        "populates": "TextAd.description1",
+        "filterable": true
+      },
+      {
+        "field": "Description1",
+        "populates": "DynamicSearchAd.description1",
+        "filterable": true
+      },
+      {
+        "field": "Description2",
+        "populates": "TextAd.description2",
+        "filterable": true
+      },
+      {
+        "field": "Description2",
+        "populates": "DynamicSearchAd.description2",
+        "filterable": true
+      },
+      {
+        "field": "DevicePreference",
+        "populates": "Ad.devicePreference",
+        "filterable": true
+      },
+      {
+        "field": "Dimensions",
+        "populates": "Media.dimensions",
+        "filterable": false
+      },
+      {
+        "field": "DisplayUploadAdGmailTeaserBusinessName",
+        "populates": "GmailTeaser.businessName",
+        "filterable": true
+      },
+      {
+        "field": "DisplayUploadAdGmailTeaserDescription",
+        "populates": "GmailTeaser.description",
+        "filterable": true
+      },
+      {
+        "field": "DisplayUploadAdGmailTeaserHeadline",
+        "populates": "GmailTeaser.headline",
+        "filterable": true
+      },
+      {
+        "field": "DisplayUploadAdGmailTeaserLogoImage",
+        "populates": "GmailTeaser.logoImage",
+        "filterable": false
+      },
+      {
+        "field": "DisplayUrl",
+        "populates": "Ad.displayUrl",
+        "filterable": true
+      },
+      {
+        "field": "ExpandingDirections",
+        "populates": "ThirdPartyRedirectAd.expandingDirections",
+        "filterable": false
+      },
+      {
+        "field": "FileSize",
+        "populates": "Media.fileSize",
+        "filterable": false
+      },
+      {
+        "field": "FormatSetting",
+        "populates": "ResponsiveDisplayAd.formatSetting",
+        "filterable": true
+      },
+      {
+        "field": "GmailHeaderImage",
+        "populates": "GmailAd.headerImage",
+        "filterable": false
+      },
+      {
+        "field": "GmailMarketingImage",
+        "populates": "GmailAd.marketingImage",
+        "filterable": false
+      },
+      {
+        "field": "GmailTeaserBusinessName",
+        "populates": "GmailTeaser.businessName",
+        "filterable": true
+      },
+      {
+        "field": "GmailTeaserDescription",
+        "populates": "GmailTeaser.description",
+        "filterable": true
+      },
+      {
+        "field": "GmailTeaserHeadline",
+        "populates": "GmailTeaser.headline",
+        "filterable": true
+      },
+      {
+        "field": "GmailTeaserLogoImage",
+        "populates": "GmailTeaser.logoImage",
+        "filterable": false
+      },
+      {
+        "field": "Headline",
+        "populates": "TextAd.headline",
+        "filterable": true
+      },
+      {
+        "field": "HeadlinePart1",
+        "populates": "ExpandedTextAd.headlinePart1",
+        "filterable": true
+      },
+      {
+        "field": "HeadlinePart2",
+        "populates": "ExpandedTextAd.headlinePart2",
+        "filterable": true
+      },
+      {
+        "field": "Height",
+        "populates": "Dimensions.height",
+        "filterable": false
+      },
+      {
+        "field": "Id",
+        "populates": "Ad.id",
+        "filterable": true
+      },
+      {
+        "field": "ImageCreativeName",
+        "populates": "ImageAd.name",
+        "filterable": true
+      },
+      {
+        "field": "IndustryStandardCommercialIdentifier",
+        "populates": "Video.industryStandardCommercialIdentifier",
+        "filterable": false
+      },
+      {
+        "field": "IsCookieTargeted",
+        "populates": "ThirdPartyRedirectAd.isCookieTargeted",
+        "filterable": false
+      },
+      {
+        "field": "IsTagged",
+        "populates": "ThirdPartyRedirectAd.isTagged",
+        "filterable": false
+      },
+      {
+        "field": "IsUserInterestTargeted",
+        "populates": "ThirdPartyRedirectAd.isUserInterestTargeted",
+        "filterable": false
+      },
+      {
+        "field": "Labels",
+        "populates": "AdGroupAd.labels",
+        "filterable": true
+      },
+      {
+        "field": "LandscapeLogoImage",
+        "populates": "DynamicSettings.landscapeLogoImage",
+        "filterable": false
+      },
+      {
+        "field": "LogoImage",
+        "populates": "ResponsiveDisplayAd.logoImage",
+        "filterable": false
+      },
+      {
+        "field": "LongHeadline",
+        "populates": "ResponsiveDisplayAd.longHeadline",
+        "filterable": true
+      },
+      {
+        "field": "MainColor",
+        "populates": "ResponsiveDisplayAd.mainColor",
+        "filterable": true
+      },
+      {
+        "field": "MarketingImage",
+        "populates": "ResponsiveDisplayAd.marketingImage",
+        "filterable": false
+      },
+      {
+        "field": "MarketingImageCallToActionText",
+        "populates": "DisplayCallToAction.text",
+        "filterable": true
+      },
+      {
+        "field": "MarketingImageCallToActionTextColor",
+        "populates": "DisplayCallToAction.textColor",
+        "filterable": true
+      },
+      {
+        "field": "MarketingImageDescription",
+        "populates": "GmailAd.marketingImageDescription",
+        "filterable": true
+      },
+      {
+        "field": "MarketingImageHeadline",
+        "populates": "GmailAd.marketingImageHeadline",
+        "filterable": true
+      },
+      {
+        "field": "MediaId",
+        "populates": "Media.mediaId",
+        "filterable": false
+      },
+      {
+        "field": "MimeType",
+        "populates": "Media.mimeType",
+        "filterable": false
+      },
+      {
+        "field": "MultiAssetResponsiveDisplayAdAccentColor",
+        "populates": "MultiAssetResponsiveDisplayAd.accentColor",
+        "filterable": true
+      },
+      {
+        "field": "MultiAssetResponsiveDisplayAdAllowFlexibleColor",
+        "populates": "MultiAssetResponsiveDisplayAd.allowFlexibleColor",
+        "filterable": true
+      },
+      {
+        "field": "MultiAssetResponsiveDisplayAdBusinessName",
+        "populates": "MultiAssetResponsiveDisplayAd.businessName",
+        "filterable": true
+      },
+      {
+        "field": "MultiAssetResponsiveDisplayAdCallToActionText",
+        "populates": "MultiAssetResponsiveDisplayAd.callToActionText",
+        "filterable": true
+      },
+      {
+        "field": "MultiAssetResponsiveDisplayAdDescriptions",
+        "populates": "MultiAssetResponsiveDisplayAd.descriptions",
+        "filterable": false
+      },
+      {
+        "field": "MultiAssetResponsiveDisplayAdDynamicSettingsPricePrefix",
+        "populates": "MultiAssetResponsiveDisplayAd.dynamicSettingsPricePrefix",
+        "filterable": true
+      },
+      {
+        "field": "MultiAssetResponsiveDisplayAdDynamicSettingsPromoText",
+        "populates": "MultiAssetResponsiveDisplayAd.dynamicSettingsPromoText",
+        "filterable": true
+      },
+      {
+        "field": "MultiAssetResponsiveDisplayAdFormatSetting",
+        "populates": "MultiAssetResponsiveDisplayAd.formatSetting",
+        "filterable": true
+      },
+      {
+        "field": "MultiAssetResponsiveDisplayAdHeadlines",
+        "populates": "MultiAssetResponsiveDisplayAd.headlines",
+        "filterable": false
+      },
+      {
+        "field": "MultiAssetResponsiveDisplayAdLandscapeLogoImages",
+        "populates": "MultiAssetResponsiveDisplayAd.landscapeLogoImages",
+        "filterable": false
+      },
+      {
+        "field": "MultiAssetResponsiveDisplayAdLogoImages",
+        "populates": "MultiAssetResponsiveDisplayAd.logoImages",
+        "filterable": false
+      },
+      {
+        "field": "MultiAssetResponsiveDisplayAdLongHeadline",
+        "populates": "MultiAssetResponsiveDisplayAd.longHeadline",
+        "filterable": false
+      },
+      {
+        "field": "MultiAssetResponsiveDisplayAdMainColor",
+        "populates": "MultiAssetResponsiveDisplayAd.mainColor",
+        "filterable": true
+      },
+      {
+        "field": "MultiAssetResponsiveDisplayAdMarketingImages",
+        "populates": "MultiAssetResponsiveDisplayAd.marketingImages",
+        "filterable": false
+      },
+      {
+        "field": "MultiAssetResponsiveDisplayAdSquareMarketingImages",
+        "populates": "MultiAssetResponsiveDisplayAd.squareMarketingImages",
+        "filterable": false
+      },
+      {
+        "field": "Path1",
+        "populates": "ExpandedTextAd.path1",
+        "filterable": true
+      },
+      {
+        "field": "Path2",
+        "populates": "ExpandedTextAd.path2",
+        "filterable": true
+      },
+      {
+        "field": "PolicySummary",
+        "populates": "AdGroupAd.policySummary",
+        "filterable": false
+      },
+      {
+        "field": "PricePrefix",
+        "populates": "DynamicSettings.pricePrefix",
+        "filterable": true
+      },
+      {
+        "field": "ProductImages",
+        "populates": "GmailAd.productImages",
+        "filterable": false
+      },
+      {
+        "field": "ProductVideoList",
+        "populates": "GmailAd.productVideoList",
+        "filterable": false
+      },
+      {
+        "field": "PromoText",
+        "populates": "DynamicSettings.promoText",
+        "filterable": true
+      },
+      {
+        "field": "ReadyToPlayOnTheWeb",
+        "populates": "Audio.readyToPlayOnTheWeb",
+        "filterable": false
+      },
+      {
+        "field": "ReadyToPlayOnTheWeb",
+        "populates": "Video.readyToPlayOnTheWeb",
+        "filterable": false
+      },
+      {
+        "field": "ReferenceId",
+        "populates": "Media.referenceId",
+        "filterable": false
+      },
+      {
+        "field": "ResponsiveSearchAdDescriptions",
+        "populates": "ResponsiveSearchAd.descriptions",
+        "filterable": false
+      },
+      {
+        "field": "ResponsiveSearchAdHeadlines",
+        "populates": "ResponsiveSearchAd.headlines",
+        "filterable": false
+      },
+      {
+        "field": "ResponsiveSearchAdPath1",
+        "populates": "ResponsiveSearchAd.path1",
+        "filterable": true
+      },
+      {
+        "field": "ResponsiveSearchAdPath2",
+        "populates": "ResponsiveSearchAd.path2",
+        "filterable": true
+      },
+      {
+        "field": "RichMediaAdCertifiedVendorFormatId",
+        "populates": "RichMediaAd.certifiedVendorFormatId",
+        "filterable": false
+      },
+      {
+        "field": "RichMediaAdDuration",
+        "populates": "RichMediaAd.adDuration",
+        "filterable": false
+      },
+      {
+        "field": "RichMediaAdImpressionBeaconUrl",
+        "populates": "RichMediaAd.impressionBeaconUrl",
+        "filterable": false
+      },
+      {
+        "field": "RichMediaAdName",
+        "populates": "RichMediaAd.name",
+        "filterable": false
+      },
+      {
+        "field": "RichMediaAdSnippet",
+        "populates": "RichMediaAd.snippet",
+        "filterable": false
+      },
+      {
+        "field": "RichMediaAdSourceUrl",
+        "populates": "RichMediaAd.sourceUrl",
+        "filterable": false
+      },
+      {
+        "field": "RichMediaAdType",
+        "populates": "RichMediaAd.richMediaAdType",
+        "filterable": false
+      },
+      {
+        "field": "ShortHeadline",
+        "populates": "ResponsiveDisplayAd.shortHeadline",
+        "filterable": true
+      },
+      {
+        "field": "SourceUrl",
+        "populates": "Media.sourceUrl",
+        "filterable": false
+      },
+      {
+        "field": "SquareMarketingImage",
+        "populates": "ResponsiveDisplayAd.squareMarketingImage",
+        "filterable": false
+      },
+      {
+        "field": "Status",
+        "populates": "AdGroupAd.status",
+        "filterable": true
+      },
+      {
+        "field": "SystemManagedEntitySource",
+        "populates": "Ad.systemManagedEntitySource",
+        "filterable": true
+      },
+      {
+        "field": "TemplateAdDuration",
+        "populates": "TemplateAd.duration",
+        "filterable": false
+      },
+      {
+        "field": "TemplateAdName",
+        "populates": "TemplateAd.name",
+        "filterable": false
+      },
+      {
+        "field": "TemplateAdUnionId",
+        "populates": "TemplateAd.adUnionId",
+        "filterable": false
+      },
+      {
+        "field": "TemplateElementFieldName",
+        "populates": "TemplateElementField.name",
+        "filterable": false
+      },
+      {
+        "field": "TemplateElementFieldText",
+        "populates": "TemplateElementField.fieldText",
+        "filterable": false
+      },
+      {
+        "field": "TemplateElementFieldType",
+        "populates": "TemplateElementField.type",
+        "filterable": false
+      },
+      {
+        "field": "TemplateId",
+        "populates": "TemplateAd.templateId",
+        "filterable": true
+      },
+      {
+        "field": "TemplateOriginAdId",
+        "populates": "TemplateAd.originAdId",
+        "filterable": false
+      },
+      {
+        "field": "UniqueName",
+        "populates": "TemplateElement.uniqueName",
+        "filterable": false
+      },
+      {
+        "field": "Url",
+        "populates": "Ad.url",
+        "filterable": true
+      },
+      {
+        "field": "UrlData",
+        "populates": "Ad.urlData",
+        "filterable": false
+      },
+      {
+        "field": "Urls",
+        "populates": "Media.urls",
+        "filterable": false
+      },
+      {
+        "field": "VideoTypes",
+        "populates": "ThirdPartyRedirectAd.videoTypes",
+        "filterable": false
+      },
+      {
+        "field": "Width",
+        "populates": "Dimensions.width",
+        "filterable": false
+      },
+      {
+        "field": "YouTubeVideoIdString",
+        "populates": "Video.youTubeVideoIdString",
+        "filterable": false
+      }
+    ]
+  },
+  "ad_group_bid_modifiers": {
+    "get": [
+      {
+        "field": "AdGroupId",
+        "populates": "AdGroupBidModifier.adGroupId",
+        "filterable": true
+      },
+      {
+        "field": "BaseAdGroupId",
+        "populates": "AdGroupBidModifier.baseAdGroupId",
+        "filterable": true
+      },
+      {
+        "field": "BidModifier",
+        "populates": "AdGroupBidModifier.bidModifier",
+        "filterable": true
+      },
+      {
+        "field": "BidModifierSource",
+        "populates": "AdGroupBidModifier.bidModifierSource",
+        "filterable": true
+      },
+      {
+        "field": "CampaignId",
+        "populates": "AdGroupBidModifier.campaignId",
+        "filterable": true
+      },
+      {
+        "field": "CriteriaType",
+        "populates": "Criterion.type",
+        "filterable": true
+      },
+      {
+        "field": "Id",
+        "populates": "Criterion.id",
+        "filterable": true
+      },
+      {
+        "field": "PlatformName",
+        "populates": "Platform.platformName",
+        "filterable": true
+      }
+    ]
+  },
+  "ad_group_criteria": {
+    "get": [
+      {
+        "field": "AdGroupId",
+        "populates": "AdGroupCriterion.adGroupId",
+        "filterable": true
+      },
+      {
+        "field": "AgeRangeType",
+        "populates": "AgeRange.ageRangeType",
+        "filterable": false
+      },
+      {
+        "field": "AppId",
+        "populates": "MobileApplication.appId",
+        "filterable": true
+      },
+      {
+        "field": "AppPaymentModelType",
+        "populates": "AppPaymentModel.appPaymentModelType",
+        "filterable": false
+      },
+      {
+        "field": "ApprovalStatus",
+        "populates": "BiddableAdGroupCriterion.approvalStatus",
+        "filterable": true
+      },
+      {
+        "field": "BaseAdGroupId",
+        "populates": "AdGroupCriterion.baseAdGroupId",
+        "filterable": true
+      },
+      {
+        "field": "BaseCampaignId",
+        "populates": "AdGroupCriterion.baseCampaignId",
+        "filterable": true
+      },
+      {
+        "field": "BidModifier",
+        "populates": "BiddableAdGroupCriterion.bidModifier",
+        "filterable": true
+      },
+      {
+        "field": "BiddingStrategyId",
+        "populates": "BiddingStrategyConfiguration.biddingStrategyId",
+        "filterable": true
+      },
+      {
+        "field": "BiddingStrategyName",
+        "populates": "BiddingStrategyConfiguration.biddingStrategyName",
+        "filterable": true
+      },
+      {
+        "field": "BiddingStrategySource",
+        "populates": "BiddingStrategyConfiguration.biddingStrategySource",
+        "filterable": true
+      },
+      {
+        "field": "BiddingStrategyType",
+        "populates": "BiddingStrategyConfiguration.biddingStrategyType",
+        "filterable": true
+      },
+      {
+        "field": "CaseValue",
+        "populates": "ProductPartition.caseValue",
+        "filterable": false
+      },
+      {
+        "field": "ChannelId",
+        "populates": "YouTubeChannel.channelId",
+        "filterable": false
+      },
+      {
+        "field": "ChannelName",
+        "populates": "YouTubeChannel.channelName",
+        "filterable": false
+      },
+      {
+        "field": "CpcBid",
+        "populates": "CpcBid.bid",
+        "filterable": true
+      },
+      {
+        "field": "CpcBidSource",
+        "populates": "CpcBid.cpcBidSource",
+        "filterable": true
+      },
+      {
+        "field": "CpmBid",
+        "populates": "CpmBid.bid",
+        "filterable": true
+      },
+      {
+        "field": "CpmBidSource",
+        "populates": "CpmBid.cpmBidSource",
+        "filterable": true
+      },
+      {
+        "field": "CriteriaCoverage",
+        "populates": "Webpage.criteriaCoverage",
+        "filterable": false
+      },
+      {
+        "field": "CriteriaSamples",
+        "populates": "Webpage.criteriaSamples",
+        "filterable": false
+      },
+      {
+        "field": "CriteriaType",
+        "populates": "Criterion.type",
+        "filterable": true
+      },
+      {
+        "field": "CriterionUse",
+        "populates": "AdGroupCriterion.criterionUse",
+        "filterable": true
+      },
+      {
+        "field": "CustomAffinityId",
+        "populates": "CriterionCustomAffinity.customAffinityId",
+        "filterable": true
+      },
+      {
+        "field": "CustomIntentId",
+        "populates": "CriterionCustomIntent.customIntentId",
+        "filterable": true
+      },
+      {
+        "field": "DestinationUrl",
+        "populates": "BiddableAdGroupCriterion.destinationUrl",
+        "filterable": true
+      },
+      {
+        "field": "DisapprovalReasons",
+        "populates": "BiddableAdGroupCriterion.disapprovalReasons",
+        "filterable": false
+      },
+      {
+        "field": "DisplayName",
+        "populates": "MobileApplication.displayName",
+        "filterable": true
+      },
+      {
+        "field": "EnhancedCpcEnabled",
+        "populates": "ManualCpcBiddingScheme.enhancedCpcEnabled",
+        "filterable": true
+      },
+      {
+        "field": "FinalAppUrls",
+        "populates": "BiddableAdGroupCriterion.finalAppUrls",
+        "filterable": true
+      },
+      {
+        "field": "FinalMobileUrls",
+        "populates": "BiddableAdGroupCriterion.finalMobileUrls",
+        "filterable": true
+      },
+      {
+        "field": "FinalUrlSuffix",
+        "populates": "BiddableAdGroupCriterion.finalUrlSuffix",
+        "filterable": true
+      },
+      {
+        "field": "FinalUrls",
+        "populates": "BiddableAdGroupCriterion.finalUrls",
+        "filterable": true
+      },
+      {
+        "field": "FirstPageCpc",
+        "populates": "BiddableAdGroupCriterion.firstPageCpc",
+        "filterable": true
+      },
+      {
+        "field": "FirstPositionCpc",
+        "populates": "BiddableAdGroupCriterion.firstPositionCpc",
+        "filterable": true
+      },
+      {
+        "field": "GenderType",
+        "populates": "Gender.genderType",
+        "filterable": false
+      },
+      {
+        "field": "Id",
+        "populates": "Criterion.id",
+        "filterable": true
+      },
+      {
+        "field": "IncomeRangeType",
+        "populates": "IncomeRange.incomeRangeType",
+        "filterable": false
+      },
+      {
+        "field": "KeywordMatchType",
+        "populates": "Keyword.matchType",
+        "filterable": true
+      },
+      {
+        "field": "KeywordText",
+        "populates": "Keyword.text",
+        "filterable": true
+      },
+      {
+        "field": "Labels",
+        "populates": "AdGroupCriterion.labels",
+        "filterable": true
+      },
+      {
+        "field": "MobileAppCategoryId",
+        "populates": "MobileAppCategory.mobileAppCategoryId",
+        "filterable": false
+      },
+      {
+        "field": "Parameter",
+        "populates": "Webpage.parameter",
+        "filterable": false
+      },
+      {
+        "field": "ParentCriterionId",
+        "populates": "ProductPartition.parentCriterionId",
+        "filterable": false
+      },
+      {
+        "field": "ParentType",
+        "populates": "Parent.parentType",
+        "filterable": false
+      },
+      {
+        "field": "PartitionType",
+        "populates": "ProductPartition.partitionType",
+        "filterable": false
+      },
+      {
+        "field": "Path",
+        "populates": "Vertical.path",
+        "filterable": false
+      },
+      {
+        "field": "PlacementUrl",
+        "populates": "Placement.url",
+        "filterable": true
+      },
+      {
+        "field": "QualityScore",
+        "populates": "QualityInfo.qualityScore",
+        "filterable": true
+      },
+      {
+        "field": "Status",
+        "populates": "BiddableAdGroupCriterion.userStatus",
+        "filterable": true
+      },
+      {
+        "field": "SystemServingStatus",
+        "populates": "BiddableAdGroupCriterion.systemServingStatus",
+        "filterable": true
+      },
+      {
+        "field": "TopOfPageCpc",
+        "populates": "BiddableAdGroupCriterion.topOfPageCpc",
+        "filterable": true
+      },
+      {
+        "field": "TrackingUrlTemplate",
+        "populates": "BiddableAdGroupCriterion.trackingUrlTemplate",
+        "filterable": true
+      },
+      {
+        "field": "UrlCustomParameters",
+        "populates": "BiddableAdGroupCriterion.urlCustomParameters",
+        "filterable": true
+      },
+      {
+        "field": "UserInterestId",
+        "populates": "CriterionUserInterest.userInterestId",
+        "filterable": false
+      },
+      {
+        "field": "UserInterestName",
+        "populates": "CriterionUserInterest.userInterestName",
+        "filterable": false
+      },
+      {
+        "field": "UserInterestParentId",
+        "populates": "CriterionUserInterest.userInterestParentId",
+        "filterable": false
+      },
+      {
+        "field": "UserListEligibleForDisplay",
+        "populates": "CriterionUserList.userListEligibleForDisplay",
+        "filterable": true
+      },
+      {
+        "field": "UserListEligibleForSearch",
+        "populates": "CriterionUserList.userListEligibleForSearch",
+        "filterable": true
+      },
+      {
+        "field": "UserListId",
+        "populates": "CriterionUserList.userListId",
+        "filterable": false
+      },
+      {
+        "field": "UserListMembershipStatus",
+        "populates": "CriterionUserList.userListMembershipStatus",
+        "filterable": true
+      },
+      {
+        "field": "UserListName",
+        "populates": "CriterionUserList.userListName",
+        "filterable": false
+      },
+      {
+        "field": "VerticalId",
+        "populates": "Vertical.verticalId",
+        "filterable": false
+      },
+      {
+        "field": "VerticalParentId",
+        "populates": "Vertical.verticalParentId",
+        "filterable": false
+      },
+      {
+        "field": "VideoId",
+        "populates": "YouTubeVideo.videoId",
+        "filterable": false
+      },
+      {
+        "field": "VideoName",
+        "populates": "YouTubeVideo.videoName",
+        "filterable": false
+      }
+    ]
+  },
+  "ad_group_extension_settings": {
+    "get": [
+      {
+        "field": "AdGroupId",
+        "populates": "AdGroupExtensionSetting.adGroupId",
+        "filterable": true
+      },
+      {
+        "field": "ExtensionType",
+        "populates": "AdGroupExtensionSetting.extensionType",
+        "filterable": true
+      },
+      {
+        "field": "Extensions",
+        "populates": "ExtensionSetting.extensions",
+        "filterable": false
+      },
+      {
+        "field": "PlatformRestrictions",
+        "populates": "ExtensionSetting.platformRestrictions",
+        "filterable": false
+      }
+    ]
+  },
+  "ad_group_feeds": {
+    "get": [
+      {
+        "field": "AdGroupId",
+        "populates": "AdGroupFeed.adGroupId",
+        "filterable": true
+      },
+      {
+        "field": "BaseAdGroupId",
+        "populates": "AdGroupFeed.baseAdGroupId",
+        "filterable": true
+      },
+      {
+        "field": "BaseCampaignId",
+        "populates": "AdGroupFeed.baseCampaignId",
+        "filterable": true
+      },
+      {
+        "field": "FeedId",
+        "populates": "AdGroupFeed.feedId",
+        "filterable": true
+      },
+      {
+        "field": "MatchingFunction",
+        "populates": "AdGroupFeed.matchingFunction",
+        "filterable": false
+      },
+      {
+        "field": "PlaceholderTypes",
+        "populates": "AdGroupFeed.placeholderTypes",
+        "filterable": true
+      },
+      {
+        "field": "Status",
+        "populates": "AdGroupFeed.status",
+        "filterable": true
+      }
+    ]
+  },
+  "ad_groups": {
+    "get": [
+      {
+        "field": "AdGroupType",
+        "populates": "AdGroup.adGroupType",
+        "filterable": true
+      },
+      {
+        "field": "AdRotationMode",
+        "populates": "AdGroupAdRotationMode.adRotationMode",
+        "filterable": true
+      },
+      {
+        "field": "BaseAdGroupId",
+        "populates": "AdGroup.baseAdGroupId",
+        "filterable": false
+      },
+      {
+        "field": "BaseCampaignId",
+        "populates": "AdGroup.baseCampaignId",
+        "filterable": false
+      },
+      {
+        "field": "BiddingStrategyId",
+        "populates": "BiddingStrategyConfiguration.biddingStrategyId",
+        "filterable": true
+      },
+      {
+        "field": "BiddingStrategyName",
+        "populates": "BiddingStrategyConfiguration.biddingStrategyName",
+        "filterable": true
+      },
+      {
+        "field": "BiddingStrategySource",
+        "populates": "BiddingStrategyConfiguration.biddingStrategySource",
+        "filterable": true
+      },
+      {
+        "field": "BiddingStrategyType",
+        "populates": "BiddingStrategyConfiguration.biddingStrategyType",
+        "filterable": true
+      },
+      {
+        "field": "CampaignId",
+        "populates": "AdGroup.campaignId",
+        "filterable": true
+      },
+      {
+        "field": "CampaignName",
+        "populates": "AdGroup.campaignName",
+        "filterable": true
+      },
+      {
+        "field": "ContentBidCriterionTypeGroup",
+        "populates": "AdGroup.contentBidCriterionTypeGroup",
+        "filterable": true
+      },
+      {
+        "field": "CpcBid",
+        "populates": "CpcBid.bid",
+        "filterable": true
+      },
+      {
+        "field": "CpmBid",
+        "populates": "CpmBid.bid",
+        "filterable": true
+      },
+      {
+        "field": "EnhancedCpcEnabled",
+        "populates": "ManualCpcBiddingScheme.enhancedCpcEnabled",
+        "filterable": true
+      },
+      {
+        "field": "FinalUrlSuffix",
+        "populates": "AdGroup.finalUrlSuffix",
+        "filterable": true
+      },
+      {
+        "field": "Id",
+        "populates": "AdGroup.id",
+        "filterable": true
+      },
+      {
+        "field": "Labels",
+        "populates": "AdGroup.labels",
+        "filterable": true
+      },
+      {
+        "field": "Name",
+        "populates": "AdGroup.name",
+        "filterable": true
+      },
+      {
+        "field": "Settings",
+        "populates": "AdGroup.settings",
+        "filterable": false
+      },
+      {
+        "field": "Status",
+        "populates": "AdGroup.status",
+        "filterable": true
+      },
+      {
+        "field": "TargetCpa",
+        "populates": "TargetCpaBiddingScheme.targetCpa",
+        "filterable": true
+      },
+      {
+        "field": "TargetCpaBid",
+        "populates": "CpaBid.bid",
+        "filterable": true
+      },
+      {
+        "field": "TargetCpaBidSource",
+        "populates": "CpaBid.bidSource",
+        "filterable": true
+      },
+      {
+        "field": "TargetRoasOverride",
+        "populates": "BiddingStrategyConfiguration.targetRoasOverride",
+        "filterable": true
+      },
+      {
+        "field": "TrackingUrlTemplate",
+        "populates": "AdGroup.trackingUrlTemplate",
+        "filterable": true
+      },
+      {
+        "field": "UrlCustomParameters",
+        "populates": "AdGroup.urlCustomParameters",
+        "filterable": false
+      }
+    ]
+  },
+  "ad_params": {
+    "get": [
+      {
+        "field": "AdGroupId",
+        "populates": "AdParam.adGroupId",
+        "filterable": true
+      },
+      {
+        "field": "CriterionId",
+        "populates": "AdParam.criterionId",
+        "filterable": true
+      },
+      {
+        "field": "InsertionText",
+        "populates": "AdParam.insertionText",
+        "filterable": false
+      },
+      {
+        "field": "ParamIndex",
+        "populates": "AdParam.paramIndex",
+        "filterable": false
+      }
+    ]
+  },
+  "ads": {
+    "get": [
+      {
+        "field": "AccentColor",
+        "populates": "ResponsiveDisplayAd.accentColor",
+        "filterable": true
+      },
+      {
+        "field": "AdType",
+        "populates": "Ad.type",
+        "filterable": true
+      },
+      {
+        "field": "AllowFlexibleColor",
+        "populates": "ResponsiveDisplayAd.allowFlexibleColor",
+        "filterable": true
+      },
+      {
+        "field": "BusinessName",
+        "populates": "ResponsiveDisplayAd.businessName",
+        "filterable": true
+      },
+      {
+        "field": "CallToActionText",
+        "populates": "ResponsiveDisplayAd.callToActionText",
+        "filterable": true
+      },
+      {
+        "field": "CreativeFinalAppUrls",
+        "populates": "Ad.finalAppUrls",
+        "filterable": true
+      },
+      {
+        "field": "CreativeFinalMobileUrls",
+        "populates": "Ad.finalMobileUrls",
+        "filterable": true
+      },
+      {
+        "field": "CreativeFinalUrlSuffix",
+        "populates": "Ad.finalUrlSuffix",
+        "filterable": true
+      },
+      {
+        "field": "CreativeFinalUrls",
+        "populates": "Ad.finalUrls",
+        "filterable": true
+      },
+      {
+        "field": "CreativeTrackingUrlTemplate",
+        "populates": "Ad.trackingUrlTemplate",
+        "filterable": true
+      },
+      {
+        "field": "CreativeUrlCustomParameters",
+        "populates": "Ad.urlCustomParameters",
+        "filterable": true
+      },
+      {
+        "field": "Description",
+        "populates": "ExpandedDynamicSearchAd.description",
+        "filterable": true
+      },
+      {
+        "field": "Description",
+        "populates": "ExpandedTextAd.description",
+        "filterable": true
+      },
+      {
+        "field": "Description",
+        "populates": "ResponsiveDisplayAd.description",
+        "filterable": true
+      },
+      {
+        "field": "Description1",
+        "populates": "DynamicSearchAd.description1",
+        "filterable": true
+      },
+      {
+        "field": "Description2",
+        "populates": "DynamicSearchAd.description2",
+        "filterable": true
+      },
+      {
+        "field": "DisplayUrl",
+        "populates": "Ad.displayUrl",
+        "filterable": true
+      },
+      {
+        "field": "DurationMillis",
+        "populates": "Audio.durationMillis",
+        "filterable": true
+      },
+      {
+        "field": "FormatSetting",
+        "populates": "ResponsiveDisplayAd.formatSetting",
+        "filterable": true
+      },
+      {
+        "field": "HeadlinePart1",
+        "populates": "ExpandedTextAd.headlinePart1",
+        "filterable": true
+      },
+      {
+        "field": "HeadlinePart2",
+        "populates": "ExpandedTextAd.headlinePart2",
+        "filterable": true
+      },
+      {
+        "field": "Id",
+        "populates": "Ad.id",
+        "filterable": true
+      },
+      {
+        "field": "LongHeadline",
+        "populates": "ResponsiveDisplayAd.longHeadline",
+        "filterable": true
+      },
+      {
+        "field": "MainColor",
+        "populates": "ResponsiveDisplayAd.mainColor",
+        "filterable": true
+      },
+      {
+        "field": "MultiAssetResponsiveDisplayAdAccentColor",
+        "populates": "MultiAssetResponsiveDisplayAd.accentColor",
+        "filterable": true
+      },
+      {
+        "field": "MultiAssetResponsiveDisplayAdAllowFlexibleColor",
+        "populates": "MultiAssetResponsiveDisplayAd.allowFlexibleColor",
+        "filterable": true
+      },
+      {
+        "field": "MultiAssetResponsiveDisplayAdBusinessName",
+        "populates": "MultiAssetResponsiveDisplayAd.businessName",
+        "filterable": true
+      },
+      {
+        "field": "MultiAssetResponsiveDisplayAdCallToActionText",
+        "populates": "MultiAssetResponsiveDisplayAd.callToActionText",
+        "filterable": true
+      },
+      {
+        "field": "MultiAssetResponsiveDisplayAdDescriptions",
+        "populates": "MultiAssetResponsiveDisplayAd.descriptions",
+        "filterable": false
+      },
+      {
+        "field": "MultiAssetResponsiveDisplayAdDynamicSettingsPricePrefix",
+        "populates": "MultiAssetResponsiveDisplayAd.dynamicSettingsPricePrefix",
+        "filterable": true
+      },
+      {
+        "field": "MultiAssetResponsiveDisplayAdDynamicSettingsPromoText",
+        "populates": "MultiAssetResponsiveDisplayAd.dynamicSettingsPromoText",
+        "filterable": true
+      },
+      {
+        "field": "MultiAssetResponsiveDisplayAdFormatSetting",
+        "populates": "MultiAssetResponsiveDisplayAd.formatSetting",
+        "filterable": true
+      },
+      {
+        "field": "MultiAssetResponsiveDisplayAdHeadlines",
+        "populates": "MultiAssetResponsiveDisplayAd.headlines",
+        "filterable": false
+      },
+      {
+        "field": "MultiAssetResponsiveDisplayAdLandscapeLogoImages",
+        "populates": "MultiAssetResponsiveDisplayAd.landscapeLogoImages",
+        "filterable": false
+      },
+      {
+        "field": "MultiAssetResponsiveDisplayAdLogoImages",
+        "populates": "MultiAssetResponsiveDisplayAd.logoImages",
+        "filterable": false
+      },
+      {
+        "field": "MultiAssetResponsiveDisplayAdLongHeadline",
+        "populates": "MultiAssetResponsiveDisplayAd.longHeadline",
+        "filterable": false
+      },
+      {
+        "field": "MultiAssetResponsiveDisplayAdMainColor",
+        "populates": "MultiAssetResponsiveDisplayAd.mainColor",
+        "filterable": true
+      },
+      {
+        "field": "MultiAssetResponsiveDisplayAdMarketingImages",
+        "populates": "MultiAssetResponsiveDisplayAd.marketingImages",
+        "filterable": false
+      },
+      {
+        "field": "MultiAssetResponsiveDisplayAdSquareMarketingImages",
+        "populates": "MultiAssetResponsiveDisplayAd.squareMarketingImages",
+        "filterable": false
+      },
+      {
+        "field": "Name",
+        "populates": "DeprecatedAd.name",
+        "filterable": false
+      },
+      {
+        "field": "Path1",
+        "populates": "ExpandedTextAd.path1",
+        "filterable": true
+      },
+      {
+        "field": "Path2",
+        "populates": "ExpandedTextAd.path2",
+        "filterable": true
+      },
+      {
+        "field": "ReadyToPlayOnTheWeb",
+        "populates": "Audio.readyToPlayOnTheWeb",
+        "filterable": false
+      },
+      {
+        "field": "ResponsiveSearchAdDescriptions",
+        "populates": "ResponsiveSearchAd.descriptions",
+        "filterable": false
+      },
+      {
+        "field": "ResponsiveSearchAdHeadlines",
+        "populates": "ResponsiveSearchAd.headlines",
+        "filterable": false
+      },
+      {
+        "field": "ResponsiveSearchAdPath1",
+        "populates": "ResponsiveSearchAd.path1",
+        "filterable": true
+      },
+      {
+        "field": "ResponsiveSearchAdPath2",
+        "populates": "ResponsiveSearchAd.path2",
+        "filterable": true
+      },
+      {
+        "field": "ShortHeadline",
+        "populates": "ResponsiveDisplayAd.shortHeadline",
+        "filterable": true
+      },
+      {
+        "field": "StreamingUrl",
+        "populates": "Audio.streamingUrl",
+        "filterable": false
+      },
+      {
+        "field": "Type",
+        "populates": "DeprecatedAd.deprecatedAdType",
+        "filterable": false
+      },
+      {
+        "field": "Url",
+        "populates": "Ad.url",
+        "filterable": true
+      }
+    ]
+  },
+  "adwords_user_lists": {
+    "get": [
+      {
+        "field": "AccessReason",
+        "populates": "UserList.accessReason",
+        "filterable": true
+      },
+      {
+        "field": "AccountUserListStatus",
+        "populates": "UserList.accountUserListStatus",
+        "filterable": true
+      },
+      {
+        "field": "AppId",
+        "populates": "CrmBasedUserList.appId",
+        "filterable": false
+      },
+      {
+        "field": "ClosingReason",
+        "populates": "UserList.closingReason",
+        "filterable": true
+      },
+      {
+        "field": "ConversionTypes",
+        "populates": "BasicUserList.conversionTypes",
+        "filterable": false
+      },
+      {
+        "field": "DataSourceType",
+        "populates": "CrmBasedUserList.dataSourceType",
+        "filterable": true
+      },
+      {
+        "field": "DataUploadResult",
+        "populates": "CrmBasedUserList.dataUploadResult",
+        "filterable": false
+      },
+      {
+        "field": "DateSpecificListEndDate",
+        "populates": "DateSpecificRuleUserList.endDate",
+        "filterable": false
+      },
+      {
+        "field": "DateSpecificListRule",
+        "populates": "DateSpecificRuleUserList.rule",
+        "filterable": false
+      },
+      {
+        "field": "DateSpecificListStartDate",
+        "populates": "DateSpecificRuleUserList.startDate",
+        "filterable": false
+      },
+      {
+        "field": "Description",
+        "populates": "UserList.description",
+        "filterable": false
+      },
+      {
+        "field": "ExpressionListRule",
+        "populates": "ExpressionRuleUserList.rule",
+        "filterable": false
+      },
+      {
+        "field": "Id",
+        "populates": "UserList.id",
+        "filterable": true
+      },
+      {
+        "field": "IntegrationCode",
+        "populates": "UserList.integrationCode",
+        "filterable": true
+      },
+      {
+        "field": "IsEligibleForDisplay",
+        "populates": "UserList.isEligibleForDisplay",
+        "filterable": true
+      },
+      {
+        "field": "IsEligibleForSearch",
+        "populates": "UserList.isEligibleForSearch",
+        "filterable": true
+      },
+      {
+        "field": "IsReadOnly",
+        "populates": "UserList.isReadOnly",
+        "filterable": false
+      },
+      {
+        "field": "ListType",
+        "populates": "UserList.listType",
+        "filterable": true
+      },
+      {
+        "field": "MembershipLifeSpan",
+        "populates": "UserList.membershipLifeSpan",
+        "filterable": true
+      },
+      {
+        "field": "Name",
+        "populates": "UserList.name",
+        "filterable": true
+      },
+      {
+        "field": "PrepopulationStatus",
+        "populates": "RuleBasedUserList.prepopulationStatus",
+        "filterable": false
+      },
+      {
+        "field": "Rules",
+        "populates": "LogicalUserList.rules",
+        "filterable": false
+      },
+      {
+        "field": "SeedListSize",
+        "populates": "SimilarUserList.seedListSize",
+        "filterable": true
+      },
+      {
+        "field": "SeedUserListDescription",
+        "populates": "SimilarUserList.seedUserListDescription",
+        "filterable": false
+      },
+      {
+        "field": "SeedUserListId",
+        "populates": "SimilarUserList.seedUserListId",
+        "filterable": true
+      },
+      {
+        "field": "SeedUserListName",
+        "populates": "SimilarUserList.seedUserListName",
+        "filterable": false
+      },
+      {
+        "field": "SeedUserListStatus",
+        "populates": "SimilarUserList.seedUserListStatus",
+        "filterable": false
+      },
+      {
+        "field": "Size",
+        "populates": "UserList.size",
+        "filterable": true
+      },
+      {
+        "field": "SizeForSearch",
+        "populates": "UserList.sizeForSearch",
+        "filterable": true
+      },
+      {
+        "field": "SizeRange",
+        "populates": "UserList.sizeRange",
+        "filterable": false
+      },
+      {
+        "field": "SizeRangeForSearch",
+        "populates": "UserList.sizeRangeForSearch",
+        "filterable": false
+      },
+      {
+        "field": "Status",
+        "populates": "UserList.status",
+        "filterable": true
+      },
+      {
+        "field": "UploadKeyType",
+        "populates": "CrmBasedUserList.uploadKeyType",
+        "filterable": false
+      }
+    ]
+  },
+  "assets": {
+    "get": [
+      {
+        "field": "AssetId",
+        "populates": "Asset.assetId",
+        "filterable": true
+      },
+      {
+        "field": "AssetName",
+        "populates": "Asset.assetName",
+        "filterable": true
+      },
+      {
+        "field": "AssetStatus",
+        "populates": "Asset.assetStatus",
+        "filterable": true
+      },
+      {
+        "field": "AssetSubtype",
+        "populates": "Asset.assetSubtype",
+        "filterable": true
+      },
+      {
+        "field": "ImageFileSize",
+        "populates": "ImageAsset.imageFileSize",
+        "filterable": true
+      },
+      {
+        "field": "ImageFullSizeUrl",
+        "populates": "ImageDimensionInfo.imageUrl",
+        "filterable": true
+      },
+      {
+        "field": "ImageHeight",
+        "populates": "ImageDimensionInfo.imageHeight",
+        "filterable": true
+      },
+      {
+        "field": "ImageMimeType",
+        "populates": "ImageAsset.imageMimeType",
+        "filterable": true
+      },
+      {
+        "field": "ImageWidth",
+        "populates": "ImageDimensionInfo.imageWidth",
+        "filterable": true
+      }
+    ]
+  },
+  "batch_jobs": {
+    "get": [
+      {
+        "field": "DownloadUrl",
+        "populates": "BatchJob.downloadUrl",
+        "filterable": false
+      },
+      {
+        "field": "Id",
+        "populates": "BatchJob.id",
+        "filterable": true
+      },
+      {
+        "field": "ProcessingErrors",
+        "populates": "BatchJob.processingErrors",
+        "filterable": false
+      },
+      {
+        "field": "ProgressStats",
+        "populates": "BatchJob.progressStats",
+        "filterable": false
+      },
+      {
+        "field": "Status",
+        "populates": "BatchJob.status",
+        "filterable": false
+      }
+    ]
+  },
+  "bidding_strategies": {
+    "get": [
+      {
+        "field": "BiddingScheme",
+        "populates": "SharedBiddingStrategy.biddingScheme",
+        "filterable": false
+      },
+      {
+        "field": "Id",
+        "populates": "SharedBiddingStrategy.id",
+        "filterable": true
+      },
+      {
+        "field": "Name",
+        "populates": "SharedBiddingStrategy.name",
+        "filterable": true
+      },
+      {
+        "field": "Status",
+        "populates": "SharedBiddingStrategy.status",
+        "filterable": true
+      },
+      {
+        "field": "Type",
+        "populates": "SharedBiddingStrategy.type",
+        "filterable": true
+      }
+    ]
+  },
+  "budget_orders": {
+    "get": [
+      {
+        "field": "BillingAccountId",
+        "populates": "BudgetOrder.billingAccountId",
+        "filterable": true
+      },
+      {
+        "field": "BillingAccountName",
+        "populates": "BudgetOrder.billingAccountName",
+        "filterable": true
+      },
+      {
+        "field": "BudgetOrderName",
+        "populates": "BudgetOrder.budgetOrderName",
+        "filterable": true
+      },
+      {
+        "field": "EndDateTime",
+        "populates": "BudgetOrder.endDateTime",
+        "filterable": true
+      },
+      {
+        "field": "Id",
+        "populates": "BudgetOrder.id",
+        "filterable": true
+      },
+      {
+        "field": "LastRequest",
+        "populates": "BudgetOrder.lastRequest",
+        "filterable": false
+      },
+      {
+        "field": "PoNumber",
+        "populates": "BudgetOrder.poNumber",
+        "filterable": true
+      },
+      {
+        "field": "PrimaryBillingId",
+        "populates": "BudgetOrder.primaryBillingId",
+        "filterable": true
+      },
+      {
+        "field": "SecondaryBillingId",
+        "populates": "BudgetOrder.secondaryBillingId",
+        "filterable": true
+      },
+      {
+        "field": "SpendingLimit",
+        "populates": "BudgetOrder.spendingLimit",
+        "filterable": true
+      },
+      {
+        "field": "StartDateTime",
+        "populates": "BudgetOrder.startDateTime",
+        "filterable": true
+      },
+      {
+        "field": "TotalAdjustments",
+        "populates": "BudgetOrder.totalAdjustments",
+        "filterable": true
+      }
+    ]
+  },
+  "budgets": {
+    "get": [
+      {
+        "field": "Amount",
+        "populates": "Budget.amount",
+        "filterable": true
+      },
+      {
+        "field": "BudgetId",
+        "populates": "Budget.budgetId",
+        "filterable": true
+      },
+      {
+        "field": "BudgetName",
+        "populates": "Budget.name",
+        "filterable": true
+      },
+      {
+        "field": "BudgetReferenceCount",
+        "populates": "Budget.referenceCount",
+        "filterable": true
+      },
+      {
+        "field": "BudgetStatus",
+        "populates": "Budget.status",
+        "filterable": true
+      },
+      {
+        "field": "DeliveryMethod",
+        "populates": "Budget.deliveryMethod",
+        "filterable": false
+      },
+      {
+        "field": "IsBudgetExplicitlyShared",
+        "populates": "Budget.isExplicitlyShared",
+        "filterable": true
+      }
+    ]
+  },
+  "campaign_bid_modifiers": {
+    "get": [
+      {
+        "field": "AdvertisingChannelType",
+        "populates": "CampaignBidModifier.advertisingChannelType",
+        "filterable": true
+      },
+      {
+        "field": "BidModifier",
+        "populates": "CampaignBidModifier.bidModifier",
+        "filterable": true
+      },
+      {
+        "field": "CampaignId",
+        "populates": "CampaignBidModifier.campaignId",
+        "filterable": true
+      },
+      {
+        "field": "CampaignName",
+        "populates": "CampaignBidModifier.campaignName",
+        "filterable": true
+      },
+      {
+        "field": "CriteriaType",
+        "populates": "Criterion.type",
+        "filterable": true
+      },
+      {
+        "field": "Id",
+        "populates": "Criterion.id",
+        "filterable": true
+      }
+    ]
+  },
+  "campaign_criteria": {
+    "get": [
+      {
+        "field": "Address",
+        "populates": "Proximity.address",
+        "filterable": false
+      },
+      {
+        "field": "AgeRangeType",
+        "populates": "AgeRange.ageRangeType",
+        "filterable": false
+      },
+      {
+        "field": "AppId",
+        "populates": "MobileApplication.appId",
+        "filterable": true
+      },
+      {
+        "field": "BaseCampaignId",
+        "populates": "CampaignCriterion.baseCampaignId",
+        "filterable": true
+      },
+      {
+        "field": "BidModifier",
+        "populates": "CampaignCriterion.bidModifier",
+        "filterable": true
+      },
+      {
+        "field": "CampaignCriterionStatus",
+        "populates": "CampaignCriterion.campaignCriterionStatus",
+        "filterable": true
+      },
+      {
+        "field": "CampaignId",
+        "populates": "CampaignCriterion.campaignId",
+        "filterable": true
+      },
+      {
+        "field": "CarrierCountryCode",
+        "populates": "Carrier.countryCode",
+        "filterable": false
+      },
+      {
+        "field": "CarrierName",
+        "populates": "Carrier.name",
+        "filterable": false
+      },
+      {
+        "field": "ChannelId",
+        "populates": "YouTubeChannel.channelId",
+        "filterable": false
+      },
+      {
+        "field": "ChannelName",
+        "populates": "YouTubeChannel.channelName",
+        "filterable": false
+      },
+      {
+        "field": "ContentLabelType",
+        "populates": "ContentLabel.contentLabelType",
+        "filterable": true
+      },
+      {
+        "field": "CriteriaType",
+        "populates": "Criterion.type",
+        "filterable": true
+      },
+      {
+        "field": "DayOfWeek",
+        "populates": "AdSchedule.dayOfWeek",
+        "filterable": false
+      },
+      {
+        "field": "DeviceName",
+        "populates": "MobileDevice.deviceName",
+        "filterable": false
+      },
+      {
+        "field": "DeviceType",
+        "populates": "MobileDevice.deviceType",
+        "filterable": false
+      },
+      {
+        "field": "Dimensions",
+        "populates": "ProductScope.dimensions",
+        "filterable": false
+      },
+      {
+        "field": "DisplayName",
+        "populates": "MobileApplication.displayName",
+        "filterable": true
+      },
+      {
+        "field": "DisplayType",
+        "populates": "Location.displayType",
+        "filterable": false
+      },
+      {
+        "field": "EndHour",
+        "populates": "AdSchedule.endHour",
+        "filterable": false
+      },
+      {
+        "field": "EndMinute",
+        "populates": "AdSchedule.endMinute",
+        "filterable": false
+      },
+      {
+        "field": "FeedId",
+        "populates": "LocationGroups.feedId",
+        "filterable": false
+      },
+      {
+        "field": "GenderType",
+        "populates": "Gender.genderType",
+        "filterable": false
+      },
+      {
+        "field": "GeoPoint",
+        "populates": "Proximity.geoPoint",
+        "filterable": false
+      },
+      {
+        "field": "Id",
+        "populates": "Criterion.id",
+        "filterable": true
+      },
+      {
+        "field": "IncomeRangeType",
+        "populates": "IncomeRange.incomeRangeType",
+        "filterable": false
+      },
+      {
+        "field": "IpAddress",
+        "populates": "IpBlock.ipAddress",
+        "filterable": true
+      },
+      {
+        "field": "IsNegative",
+        "populates": "CampaignCriterion.isNegative",
+        "filterable": true
+      },
+      {
+        "field": "KeywordMatchType",
+        "populates": "Keyword.matchType",
+        "filterable": true
+      },
+      {
+        "field": "KeywordText",
+        "populates": "Keyword.text",
+        "filterable": true
+      },
+      {
+        "field": "LanguageCode",
+        "populates": "Language.code",
+        "filterable": false
+      },
+      {
+        "field": "LanguageName",
+        "populates": "Language.name",
+        "filterable": false
+      },
+      {
+        "field": "LocationName",
+        "populates": "Location.locationName",
+        "filterable": true
+      },
+      {
+        "field": "ManufacturerName",
+        "populates": "MobileDevice.manufacturerName",
+        "filterable": false
+      },
+      {
+        "field": "MatchingFunction",
+        "populates": "LocationGroups.matchingFunction",
+        "filterable": false
+      },
+      {
+        "field": "MobileAppCategoryId",
+        "populates": "MobileAppCategory.mobileAppCategoryId",
+        "filterable": false
+      },
+      {
+        "field": "OperatingSystemName",
+        "populates": "MobileDevice.operatingSystemName",
+        "filterable": false
+      },
+      {
+        "field": "OperatingSystemName",
+        "populates": "OperatingSystemVersion.name",
+        "filterable": false
+      },
+      {
+        "field": "OperatorType",
+        "populates": "OperatingSystemVersion.operatorType",
+        "filterable": false
+      },
+      {
+        "field": "OsMajorVersion",
+        "populates": "OperatingSystemVersion.osMajorVersion",
+        "filterable": false
+      },
+      {
+        "field": "OsMinorVersion",
+        "populates": "OperatingSystemVersion.osMinorVersion",
+        "filterable": false
+      },
+      {
+        "field": "Parameter",
+        "populates": "Webpage.parameter",
+        "filterable": false
+      },
+      {
+        "field": "ParentLocations",
+        "populates": "Location.parentLocations",
+        "filterable": false
+      },
+      {
+        "field": "ParentType",
+        "populates": "Parent.parentType",
+        "filterable": false
+      },
+      {
+        "field": "Path",
+        "populates": "Vertical.path",
+        "filterable": false
+      },
+      {
+        "field": "PlacementUrl",
+        "populates": "Placement.url",
+        "filterable": true
+      },
+      {
+        "field": "PlatformName",
+        "populates": "Platform.platformName",
+        "filterable": true
+      },
+      {
+        "field": "RadiusDistanceUnits",
+        "populates": "Proximity.radiusDistanceUnits",
+        "filterable": false
+      },
+      {
+        "field": "RadiusInUnits",
+        "populates": "Proximity.radiusInUnits",
+        "filterable": false
+      },
+      {
+        "field": "StartHour",
+        "populates": "AdSchedule.startHour",
+        "filterable": false
+      },
+      {
+        "field": "StartMinute",
+        "populates": "AdSchedule.startMinute",
+        "filterable": false
+      },
+      {
+        "field": "TargetingStatus",
+        "populates": "Location.targetingStatus",
+        "filterable": false
+      },
+      {
+        "field": "UserInterestId",
+        "populates": "CriterionUserInterest.userInterestId",
+        "filterable": false
+      },
+      {
+        "field": "UserInterestName",
+        "populates": "CriterionUserInterest.userInterestName",
+        "filterable": false
+      },
+      {
+        "field": "UserInterestParentId",
+        "populates": "CriterionUserInterest.userInterestParentId",
+        "filterable": false
+      },
+      {
+        "field": "UserListEligibleForDisplay",
+        "populates": "CriterionUserList.userListEligibleForDisplay",
+        "filterable": true
+      },
+      {
+        "field": "UserListEligibleForSearch",
+        "populates": "CriterionUserList.userListEligibleForSearch",
+        "filterable": true
+      },
+      {
+        "field": "UserListId",
+        "populates": "CriterionUserList.userListId",
+        "filterable": false
+      },
+      {
+        "field": "UserListMembershipStatus",
+        "populates": "CriterionUserList.userListMembershipStatus",
+        "filterable": true
+      },
+      {
+        "field": "UserListName",
+        "populates": "CriterionUserList.userListName",
+        "filterable": false
+      },
+      {
+        "field": "VerticalId",
+        "populates": "Vertical.verticalId",
+        "filterable": false
+      },
+      {
+        "field": "VerticalParentId",
+        "populates": "Vertical.verticalParentId",
+        "filterable": false
+      },
+      {
+        "field": "VideoId",
+        "populates": "YouTubeVideo.videoId",
+        "filterable": false
+      },
+      {
+        "field": "VideoName",
+        "populates": "YouTubeVideo.videoName",
+        "filterable": false
+      }
+    ]
+  },
+  "campaign_extension_settings": {
+    "get": [
+      {
+        "field": "CampaignId",
+        "populates": "CampaignExtensionSetting.campaignId",
+        "filterable": true
+      },
+      {
+        "field": "ExtensionType",
+        "populates": "CampaignExtensionSetting.extensionType",
+        "filterable": true
+      },
+      {
+        "field": "Extensions",
+        "populates": "ExtensionSetting.extensions",
+        "filterable": false
+      },
+      {
+        "field": "PlatformRestrictions",
+        "populates": "ExtensionSetting.platformRestrictions",
+        "filterable": false
+      }
+    ]
+  },
+  "campaign_feeds": {
+    "get": [
+      {
+        "field": "BaseCampaignId",
+        "populates": "CampaignFeed.baseCampaignId",
+        "filterable": true
+      },
+      {
+        "field": "CampaignId",
+        "populates": "CampaignFeed.campaignId",
+        "filterable": true
+      },
+      {
+        "field": "FeedId",
+        "populates": "CampaignFeed.feedId",
+        "filterable": true
+      },
+      {
+        "field": "MatchingFunction",
+        "populates": "CampaignFeed.matchingFunction",
+        "filterable": false
+      },
+      {
+        "field": "PlaceholderTypes",
+        "populates": "CampaignFeed.placeholderTypes",
+        "filterable": true
+      },
+      {
+        "field": "Status",
+        "populates": "CampaignFeed.status",
+        "filterable": true
+      }
+    ]
+  },
+  "campaign_group_performance_targets": {
+    "get": [
+      {
+        "field": "CampaignGroupId",
+        "populates": "CampaignGroupPerformanceTarget.campaignGroupId",
+        "filterable": true
+      },
+      {
+        "field": "EfficiencyTargetType",
+        "populates": "PerformanceTarget.efficiencyTargetType",
+        "filterable": true
+      },
+      {
+        "field": "EfficiencyTargetValue",
+        "populates": "PerformanceTarget.efficiencyTargetValue",
+        "filterable": true
+      },
+      {
+        "field": "EndDate",
+        "populates": "PerformanceTarget.endDate",
+        "filterable": true
+      },
+      {
+        "field": "ForecastStatus",
+        "populates": "PerformanceTarget.forecastStatus",
+        "filterable": true
+      },
+      {
+        "field": "HasPromotedSuggestions",
+        "populates": "PerformanceTarget.hasPromotedSuggestions",
+        "filterable": true
+      },
+      {
+        "field": "Id",
+        "populates": "CampaignGroupPerformanceTarget.id",
+        "filterable": true
+      },
+      {
+        "field": "SpendTarget",
+        "populates": "PerformanceTarget.spendTarget",
+        "filterable": true
+      },
+      {
+        "field": "SpendTargetType",
+        "populates": "PerformanceTarget.spendTargetType",
+        "filterable": true
+      },
+      {
+        "field": "StartDate",
+        "populates": "PerformanceTarget.startDate",
+        "filterable": true
+      },
+      {
+        "field": "VolumeGoalType",
+        "populates": "PerformanceTarget.volumeGoalType",
+        "filterable": true
+      },
+      {
+        "field": "VolumeTargetValue",
+        "populates": "PerformanceTarget.volumeTargetValue",
+        "filterable": true
+      }
+    ]
+  },
+  "campaign_groups": {
+    "get": [
+      {
+        "field": "Id",
+        "populates": "CampaignGroup.id",
+        "filterable": true
+      },
+      {
+        "field": "Name",
+        "populates": "CampaignGroup.name",
+        "filterable": true
+      },
+      {
+        "field": "Status",
+        "populates": "CampaignGroup.status",
+        "filterable": true
+      }
+    ]
+  },
+  "campaigns": {
+    "get": [
+      {
+        "field": "AdServingOptimizationStatus",
+        "populates": "Campaign.adServingOptimizationStatus",
+        "filterable": false
+      },
+      {
+        "field": "AdvertisingChannelSubType",
+        "populates": "Campaign.advertisingChannelSubType",
+        "filterable": true
+      },
+      {
+        "field": "AdvertisingChannelType",
+        "populates": "Campaign.advertisingChannelType",
+        "filterable": true
+      },
+      {
+        "field": "Amount",
+        "populates": "Budget.amount",
+        "filterable": true
+      },
+      {
+        "field": "BaseCampaignId",
+        "populates": "Campaign.baseCampaignId",
+        "filterable": true
+      },
+      {
+        "field": "BiddingStrategyId",
+        "populates": "BiddingStrategyConfiguration.biddingStrategyId",
+        "filterable": true
+      },
+      {
+        "field": "BiddingStrategyName",
+        "populates": "BiddingStrategyConfiguration.biddingStrategyName",
+        "filterable": true
+      },
+      {
+        "field": "BiddingStrategyType",
+        "populates": "BiddingStrategyConfiguration.biddingStrategyType",
+        "filterable": true
+      },
+      {
+        "field": "BudgetId",
+        "populates": "Budget.budgetId",
+        "filterable": true
+      },
+      {
+        "field": "BudgetName",
+        "populates": "Budget.name",
+        "filterable": false
+      },
+      {
+        "field": "BudgetReferenceCount",
+        "populates": "Budget.referenceCount",
+        "filterable": true
+      },
+      {
+        "field": "BudgetStatus",
+        "populates": "Budget.status",
+        "filterable": true
+      },
+      {
+        "field": "CampaignGroupId",
+        "populates": "Campaign.campaignGroupId",
+        "filterable": true
+      },
+      {
+        "field": "CampaignTrialType",
+        "populates": "Campaign.campaignTrialType",
+        "filterable": true
+      },
+      {
+        "field": "DeliveryMethod",
+        "populates": "Budget.deliveryMethod",
+        "filterable": false
+      },
+      {
+        "field": "Eligible",
+        "populates": "ConversionOptimizerEligibility.eligible",
+        "filterable": false
+      },
+      {
+        "field": "EndDate",
+        "populates": "Campaign.endDate",
+        "filterable": true
+      },
+      {
+        "field": "EnhancedCpcEnabled",
+        "populates": "ManualCpcBiddingScheme.enhancedCpcEnabled",
+        "filterable": true
+      },
+      {
+        "field": "FinalUrlSuffix",
+        "populates": "Campaign.finalUrlSuffix",
+        "filterable": true
+      },
+      {
+        "field": "FrequencyCapMaxImpressions",
+        "populates": "FrequencyCap.impressions",
+        "filterable": true
+      },
+      {
+        "field": "Id",
+        "populates": "Campaign.id",
+        "filterable": true
+      },
+      {
+        "field": "IsBudgetExplicitlyShared",
+        "populates": "Budget.isExplicitlyShared",
+        "filterable": false
+      },
+      {
+        "field": "Labels",
+        "populates": "Campaign.labels",
+        "filterable": true
+      },
+      {
+        "field": "Level",
+        "populates": "FrequencyCap.level",
+        "filterable": true
+      },
+      {
+        "field": "MaximizeConversionValueTargetRoas",
+        "populates": "MaximizeConversionValueBiddingScheme.targetRoas",
+        "filterable": true
+      },
+      {
+        "field": "Name",
+        "populates": "Campaign.name",
+        "filterable": true
+      },
+      {
+        "field": "RejectionReasons",
+        "populates": "ConversionOptimizerEligibility.rejectionReasons",
+        "filterable": false
+      },
+      {
+        "field": "SelectiveOptimization",
+        "populates": "Campaign.selectiveOptimization",
+        "filterable": false
+      },
+      {
+        "field": "ServingStatus",
+        "populates": "Campaign.servingStatus",
+        "filterable": true
+      },
+      {
+        "field": "Settings",
+        "populates": "Campaign.settings",
+        "filterable": false
+      },
+      {
+        "field": "StartDate",
+        "populates": "Campaign.startDate",
+        "filterable": true
+      },
+      {
+        "field": "Status",
+        "populates": "Campaign.status",
+        "filterable": true
+      },
+      {
+        "field": "TargetContentNetwork",
+        "populates": "NetworkSetting.targetContentNetwork",
+        "filterable": true
+      },
+      {
+        "field": "TargetCpa",
+        "populates": "TargetCpaBiddingScheme.targetCpa",
+        "filterable": false
+      },
+      {
+        "field": "TargetCpaMaxCpcBidCeiling",
+        "populates": "TargetCpaBiddingScheme.maxCpcBidCeiling",
+        "filterable": true
+      },
+      {
+        "field": "TargetCpaMaxCpcBidFloor",
+        "populates": "TargetCpaBiddingScheme.maxCpcBidFloor",
+        "filterable": true
+      },
+      {
+        "field": "TargetGoogleSearch",
+        "populates": "NetworkSetting.targetGoogleSearch",
+        "filterable": true
+      },
+      {
+        "field": "TargetPartnerSearchNetwork",
+        "populates": "NetworkSetting.targetPartnerSearchNetwork",
+        "filterable": true
+      },
+      {
+        "field": "TargetRoas",
+        "populates": "TargetRoasBiddingScheme.targetRoas",
+        "filterable": false
+      },
+      {
+        "field": "TargetRoasBidCeiling",
+        "populates": "TargetRoasBiddingScheme.bidCeiling",
+        "filterable": false
+      },
+      {
+        "field": "TargetRoasBidFloor",
+        "populates": "TargetRoasBiddingScheme.bidFloor",
+        "filterable": false
+      },
+      {
+        "field": "TargetSearchNetwork",
+        "populates": "NetworkSetting.targetSearchNetwork",
+        "filterable": true
+      },
+      {
+        "field": "TargetSpendBidCeiling",
+        "populates": "TargetSpendBiddingScheme.bidCeiling",
+        "filterable": false
+      },
+      {
+        "field": "TargetSpendSpendTarget",
+        "populates": "TargetSpendBiddingScheme.spendTarget",
+        "filterable": false
+      },
+      {
+        "field": "TimeUnit",
+        "populates": "FrequencyCap.timeUnit",
+        "filterable": true
+      },
+      {
+        "field": "TrackingUrlTemplate",
+        "populates": "Campaign.trackingUrlTemplate",
+        "filterable": true
+      },
+      {
+        "field": "UrlCustomParameters",
+        "populates": "Campaign.urlCustomParameters",
+        "filterable": false
+      },
+      {
+        "field": "VanityPharmaDisplayUrlMode",
+        "populates": "VanityPharma.vanityPharmaDisplayUrlMode",
+        "filterable": true
+      },
+      {
+        "field": "VanityPharmaText",
+        "populates": "VanityPharma.vanityPharmaText",
+        "filterable": true
+      },
+      {
+        "field": "ViewableCpmEnabled",
+        "populates": "ManualCpmBiddingScheme.viewableCpmEnabled",
+        "filterable": true
+      }
+    ]
+  },
+  "campaign_shared_sets": {
+    "get": [
+      {
+        "field": "CampaignId",
+        "populates": "CampaignSharedSet.campaignId",
+        "filterable": true
+      },
+      {
+        "field": "CampaignName",
+        "populates": "CampaignSharedSet.campaignName",
+        "filterable": false
+      },
+      {
+        "field": "SharedSetId",
+        "populates": "CampaignSharedSet.sharedSetId",
+        "filterable": true
+      },
+      {
+        "field": "SharedSetName",
+        "populates": "CampaignSharedSet.sharedSetName",
+        "filterable": false
+      },
+      {
+        "field": "SharedSetType",
+        "populates": "CampaignSharedSet.sharedSetType",
+        "filterable": true
+      },
+      {
+        "field": "Status",
+        "populates": "CampaignSharedSet.status",
+        "filterable": true
+      }
+    ]
+  },
+  "constant_data": {
+    "get_product_bidding_category_data": [
+      {
+        "field": "BiddingCategoryStatus",
+        "populates": "ProductBiddingCategoryData.status",
+        "filterable": true
+      },
+      {
+        "field": "Country",
+        "populates": "ProductBiddingCategoryData.country",
+        "filterable": true
+      }
+    ]
+  },
+  "conversion_trackers": {
+    "get": [
+      {
+        "field": "AlwaysUseDefaultRevenueValue",
+        "populates": "ConversionTracker.alwaysUseDefaultRevenueValue",
+        "filterable": true
+      },
+      {
+        "field": "AppId",
+        "populates": "AppConversion.appId",
+        "filterable": true
+      },
+      {
+        "field": "AppPlatform",
+        "populates": "AppConversion.appPlatform",
+        "filterable": true
+      },
+      {
+        "field": "AppPostbackUrl",
+        "populates": "AppConversion.appPostbackUrl",
+        "filterable": true
+      },
+      {
+        "field": "AttributionModelType",
+        "populates": "ConversionTracker.attributionModelType",
+        "filterable": false
+      },
+      {
+        "field": "Category",
+        "populates": "ConversionTracker.category",
+        "filterable": true
+      },
+      {
+        "field": "ConversionTypeOwnerCustomerId",
+        "populates": "ConversionTracker.conversionTypeOwnerCustomerId",
+        "filterable": true
+      },
+      {
+        "field": "CountingType",
+        "populates": "ConversionTracker.countingType",
+        "filterable": true
+      },
+      {
+        "field": "CtcLookbackWindow",
+        "populates": "ConversionTracker.ctcLookbackWindow",
+        "filterable": true
+      },
+      {
+        "field": "DataDrivenModelStatus",
+        "populates": "ConversionTracker.dataDrivenModelStatus",
+        "filterable": true
+      },
+      {
+        "field": "DefaultRevenueCurrencyCode",
+        "populates": "ConversionTracker.defaultRevenueCurrencyCode",
+        "filterable": true
+      },
+      {
+        "field": "DefaultRevenueValue",
+        "populates": "ConversionTracker.defaultRevenueValue",
+        "filterable": true
+      },
+      {
+        "field": "ExcludeFromBidding",
+        "populates": "ConversionTracker.excludeFromBidding",
+        "filterable": true
+      },
+      {
+        "field": "GoogleEventSnippet",
+        "populates": "ConversionTracker.googleEventSnippet",
+        "filterable": true
+      },
+      {
+        "field": "GoogleGlobalSiteTag",
+        "populates": "ConversionTracker.googleGlobalSiteTag",
+        "filterable": true
+      },
+      {
+        "field": "Id",
+        "populates": "ConversionTracker.id",
+        "filterable": true
+      },
+      {
+        "field": "LastReceivedRequestTime",
+        "populates": "ConversionTracker.lastReceivedRequestTime",
+        "filterable": false
+      },
+      {
+        "field": "MostRecentConversionDate",
+        "populates": "ConversionTracker.mostRecentConversionDate",
+        "filterable": false
+      },
+      {
+        "field": "Name",
+        "populates": "ConversionTracker.name",
+        "filterable": true
+      },
+      {
+        "field": "OriginalConversionTypeId",
+        "populates": "ConversionTracker.originalConversionTypeId",
+        "filterable": true
+      },
+      {
+        "field": "PhoneCallDuration",
+        "populates": "AdCallMetricsConversion.phoneCallDuration",
+        "filterable": true
+      },
+      {
+        "field": "Status",
+        "populates": "ConversionTracker.status",
+        "filterable": true
+      },
+      {
+        "field": "TrackingCodeType",
+        "populates": "AdWordsConversionTracker.trackingCodeType",
+        "filterable": true
+      },
+      {
+        "field": "ViewthroughLookbackWindow",
+        "populates": "ConversionTracker.viewthroughLookbackWindow",
+        "filterable": true
+      },
+      {
+        "field": "WebsitePhoneCallDuration",
+        "populates": "WebsiteCallMetricsConversion.phoneCallDuration",
+        "filterable": false
+      }
+    ]
+  },
+  "custom_affinities": {
+    "get": [
+      {
+        "field": "CustomAffinityId",
+        "populates": "CustomAffinity.id",
+        "filterable": true
+      },
+      {
+        "field": "Description",
+        "populates": "CustomAffinity.description",
+        "filterable": true
+      },
+      {
+        "field": "Name",
+        "populates": "CustomAffinity.name",
+        "filterable": true
+      },
+      {
+        "field": "Status",
+        "populates": "CustomAffinity.status",
+        "filterable": true
+      },
+      {
+        "field": "Tokens",
+        "populates": "CustomAffinity.tokens",
+        "filterable": false
+      },
+      {
+        "field": "Type",
+        "populates": "CustomAffinity.type",
+        "filterable": true
+      }
+    ]
+  },
+  "customer_extension_settings": {
+    "get": [
+      {
+        "field": "ExtensionType",
+        "populates": "CustomerExtensionSetting.extensionType",
+        "filterable": true
+      },
+      {
+        "field": "Extensions",
+        "populates": "ExtensionSetting.extensions",
+        "filterable": false
+      },
+      {
+        "field": "PlatformRestrictions",
+        "populates": "ExtensionSetting.platformRestrictions",
+        "filterable": false
+      }
+    ]
+  },
+  "customer_feeds": {
+    "get": [
+      {
+        "field": "FeedId",
+        "populates": "CustomerFeed.feedId",
+        "filterable": true
+      },
+      {
+        "field": "MatchingFunction",
+        "populates": "CustomerFeed.matchingFunction",
+        "filterable": false
+      },
+      {
+        "field": "PlaceholderTypes",
+        "populates": "CustomerFeed.placeholderTypes",
+        "filterable": true
+      },
+      {
+        "field": "Status",
+        "populates": "CustomerFeed.status",
+        "filterable": true
+      }
+    ]
+  },
+  "customer_negative_criteria": {
+    "get": [
+      {
+        "field": "AppId",
+        "populates": "MobileApplication.appId",
+        "filterable": true
+      },
+      {
+        "field": "ChannelId",
+        "populates": "YouTubeChannel.channelId",
+        "filterable": false
+      },
+      {
+        "field": "ChannelName",
+        "populates": "YouTubeChannel.channelName",
+        "filterable": false
+      },
+      {
+        "field": "ContentLabelType",
+        "populates": "ContentLabel.contentLabelType",
+        "filterable": true
+      },
+      {
+        "field": "CriteriaType",
+        "populates": "Criterion.type",
+        "filterable": true
+      },
+      {
+        "field": "DisplayName",
+        "populates": "MobileApplication.displayName",
+        "filterable": true
+      },
+      {
+        "field": "Id",
+        "populates": "Criterion.id",
+        "filterable": true
+      },
+      {
+        "field": "MobileAppCategoryId",
+        "populates": "MobileAppCategory.mobileAppCategoryId",
+        "filterable": false
+      },
+      {
+        "field": "PlacementUrl",
+        "populates": "Placement.url",
+        "filterable": true
+      },
+      {
+        "field": "VideoId",
+        "populates": "YouTubeVideo.videoId",
+        "filterable": false
+      },
+      {
+        "field": "VideoName",
+        "populates": "YouTubeVideo.videoName",
+        "filterable": false
+      }
+    ]
+  },
+  "customers": {
+    "get_service_links": [
+      {
+        "field": "ServiceType",
+        "populates": "ServiceLink.serviceType",
+        "filterable": true
+      }
+    ]
+  },
+  "data": {
+    "get_ad_group_bid_landscape": [
+      {
+        "field": "AdGroupId",
+        "populates": "BidLandscape.adGroupId",
+        "filterable": true
+      },
+      {
+        "field": "Bid",
+        "populates": "BidLandscape.LandscapePoint.bid",
+        "filterable": true
+      },
+      {
+        "field": "CampaignId",
+        "populates": "BidLandscape.campaignId",
+        "filterable": true
+      },
+      {
+        "field": "EndDate",
+        "populates": "BidLandscape.endDate",
+        "filterable": false
+      },
+      {
+        "field": "LandscapeCurrent",
+        "populates": "AdGroupBidLandscape.landscapeCurrent",
+        "filterable": true
+      },
+      {
+        "field": "LandscapeType",
+        "populates": "AdGroupBidLandscape.type",
+        "filterable": true
+      },
+      {
+        "field": "LocalClicks",
+        "populates": "BidLandscape.LandscapePoint.clicks",
+        "filterable": true
+      },
+      {
+        "field": "LocalCost",
+        "populates": "BidLandscape.LandscapePoint.cost",
+        "filterable": true
+      },
+      {
+        "field": "LocalImpressions",
+        "populates": "BidLandscape.LandscapePoint.impressions",
+        "filterable": true
+      },
+      {
+        "field": "PromotedImpressions",
+        "populates": "BidLandscape.LandscapePoint.promotedImpressions",
+        "filterable": true
+      },
+      {
+        "field": "StartDate",
+        "populates": "BidLandscape.startDate",
+        "filterable": false
+      }
+    ],
+    "get_campaign_criterion_bid_landscape": [
+      {
+        "field": "BidModifier",
+        "populates": "BidLandscape.LandscapePoint.bidModifier",
+        "filterable": true
+      },
+      {
+        "field": "CampaignId",
+        "populates": "BidLandscape.campaignId",
+        "filterable": true
+      },
+      {
+        "field": "EndDate",
+        "populates": "BidLandscape.endDate",
+        "filterable": false
+      },
+      {
+        "field": "LocalClicks",
+        "populates": "BidLandscape.LandscapePoint.clicks",
+        "filterable": true
+      },
+      {
+        "field": "LocalCost",
+        "populates": "BidLandscape.LandscapePoint.cost",
+        "filterable": true
+      },
+      {
+        "field": "LocalImpressions",
+        "populates": "BidLandscape.LandscapePoint.impressions",
+        "filterable": true
+      },
+      {
+        "field": "PromotedImpressions",
+        "populates": "BidLandscape.LandscapePoint.promotedImpressions",
+        "filterable": true
+      },
+      {
+        "field": "RequiredBudget",
+        "populates": "BidLandscape.LandscapePoint.requiredBudget",
+        "filterable": true
+      },
+      {
+        "field": "StartDate",
+        "populates": "BidLandscape.startDate",
+        "filterable": false
+      },
+      {
+        "field": "TotalLocalClicks",
+        "populates": "BidLandscape.LandscapePoint.totalLocalClicks",
+        "filterable": true
+      },
+      {
+        "field": "TotalLocalCost",
+        "populates": "BidLandscape.LandscapePoint.totalLocalCost",
+        "filterable": true
+      },
+      {
+        "field": "TotalLocalImpressions",
+        "populates": "BidLandscape.LandscapePoint.totalLocalImpressions",
+        "filterable": true
+      },
+      {
+        "field": "TotalLocalPromotedImpressions",
+        "populates": "BidLandscape.LandscapePoint.totalLocalPromotedImpressions",
+        "filterable": true
+      }
+    ],
+    "get_criterion_bid_landscape": [
+      {
+        "field": "AdGroupId",
+        "populates": "BidLandscape.adGroupId",
+        "filterable": true
+      },
+      {
+        "field": "Bid",
+        "populates": "BidLandscape.LandscapePoint.bid",
+        "filterable": true
+      },
+      {
+        "field": "CampaignId",
+        "populates": "BidLandscape.campaignId",
+        "filterable": true
+      },
+      {
+        "field": "CriterionId",
+        "populates": "CriterionBidLandscape.criterionId",
+        "filterable": true
+      },
+      {
+        "field": "EndDate",
+        "populates": "BidLandscape.endDate",
+        "filterable": false
+      },
+      {
+        "field": "LocalClicks",
+        "populates": "BidLandscape.LandscapePoint.clicks",
+        "filterable": true
+      },
+      {
+        "field": "LocalCost",
+        "populates": "BidLandscape.LandscapePoint.cost",
+        "filterable": true
+      },
+      {
+        "field": "LocalImpressions",
+        "populates": "BidLandscape.LandscapePoint.impressions",
+        "filterable": true
+      },
+      {
+        "field": "PromotedImpressions",
+        "populates": "BidLandscape.LandscapePoint.promotedImpressions",
+        "filterable": true
+      },
+      {
+        "field": "StartDate",
+        "populates": "BidLandscape.startDate",
+        "filterable": false
+      }
+    ],
+    "get_domain_category": [
+      {
+        "field": "CampaignId",
+        "populates": "LevelOfDetail.campaignId",
+        "filterable": true
+      },
+      {
+        "field": "Category",
+        "populates": "DomainCategory.category",
+        "filterable": true
+      },
+      {
+        "field": "CategoryRank",
+        "populates": "DomainCategory.categoryRank",
+        "filterable": false
+      },
+      {
+        "field": "Coverage",
+        "populates": "DomainCategory.coverage",
+        "filterable": false
+      },
+      {
+        "field": "DomainName",
+        "populates": "DomainCategory.domainName",
+        "filterable": true
+      },
+      {
+        "field": "HasChild",
+        "populates": "DomainCategory.hasChild",
+        "filterable": false
+      },
+      {
+        "field": "IsoLanguage",
+        "populates": "DomainCategory.isoLanguage",
+        "filterable": false
+      },
+      {
+        "field": "RecommendedCpc",
+        "populates": "DomainCategory.recommendedCpc",
+        "filterable": false
+      }
+    ]
+  },
+  "draft_async_errors": {
+    "get": [
+      {
+        "field": "AsyncError",
+        "populates": "DraftAsyncError.asyncError",
+        "filterable": false
+      },
+      {
+        "field": "BaseAdGroupId",
+        "populates": "DraftAsyncError.baseAdGroupId",
+        "filterable": false
+      },
+      {
+        "field": "BaseCampaignId",
+        "populates": "DraftAsyncError.baseCampaignId",
+        "filterable": true
+      },
+      {
+        "field": "DraftAdGroupId",
+        "populates": "DraftAsyncError.draftAdGroupId",
+        "filterable": false
+      },
+      {
+        "field": "DraftCampaignId",
+        "populates": "DraftAsyncError.draftCampaignId",
+        "filterable": false
+      },
+      {
+        "field": "DraftId",
+        "populates": "DraftAsyncError.draftId",
+        "filterable": true
+      }
+    ]
+  },
+  "drafts": {
+    "get": [
+      {
+        "field": "BaseCampaignId",
+        "populates": "Draft.baseCampaignId",
+        "filterable": true
+      },
+      {
+        "field": "DraftCampaignId",
+        "populates": "Draft.draftCampaignId",
+        "filterable": true
+      },
+      {
+        "field": "DraftId",
+        "populates": "Draft.draftId",
+        "filterable": true
+      },
+      {
+        "field": "DraftName",
+        "populates": "Draft.draftName",
+        "filterable": true
+      },
+      {
+        "field": "DraftStatus",
+        "populates": "Draft.draftStatus",
+        "filterable": true
+      },
+      {
+        "field": "HasRunningTrial",
+        "populates": "Draft.hasRunningTrial",
+        "filterable": true
+      }
+    ]
+  },
+  "feed_items": {
+    "get": [
+      {
+        "field": "AttributeValues",
+        "populates": "FeedItem.attributeValues",
+        "filterable": false
+      },
+      {
+        "field": "EndTime",
+        "populates": "FeedItem.endTime",
+        "filterable": true
+      },
+      {
+        "field": "FeedId",
+        "populates": "FeedItem.feedId",
+        "filterable": true
+      },
+      {
+        "field": "FeedItemId",
+        "populates": "FeedItem.feedItemId",
+        "filterable": true
+      },
+      {
+        "field": "GeoTargetingRestriction",
+        "populates": "FeedItemGeoRestriction.geoRestriction",
+        "filterable": true
+      },
+      {
+        "field": "PolicySummaries",
+        "populates": "FeedItem.policySummaries",
+        "filterable": false
+      },
+      {
+        "field": "StartTime",
+        "populates": "FeedItem.startTime",
+        "filterable": true
+      },
+      {
+        "field": "Status",
+        "populates": "FeedItem.status",
+        "filterable": true
+      },
+      {
+        "field": "UrlCustomParameters",
+        "populates": "FeedItem.urlCustomParameters",
+        "filterable": false
+      }
+    ]
+  },
+  "feed_item_targets": {
+    "get": [
+      {
+        "field": "AdGroupId",
+        "populates": "FeedItemAdGroupTarget.adGroupId",
+        "filterable": true
+      },
+      {
+        "field": "AdGroupName",
+        "populates": "FeedItemAdGroupTarget.adGroupName",
+        "filterable": true
+      },
+      {
+        "field": "CampaignId",
+        "populates": "FeedItemCampaignTarget.campaignId",
+        "filterable": true
+      },
+      {
+        "field": "CampaignName",
+        "populates": "FeedItemCampaignTarget.campaignName",
+        "filterable": true
+      },
+      {
+        "field": "CriteriaType",
+        "populates": "Criterion.type",
+        "filterable": true
+      },
+      {
+        "field": "DayOfWeek",
+        "populates": "AdSchedule.dayOfWeek",
+        "filterable": false
+      },
+      {
+        "field": "DisplayType",
+        "populates": "Location.displayType",
+        "filterable": false
+      },
+      {
+        "field": "EndHour",
+        "populates": "AdSchedule.endHour",
+        "filterable": false
+      },
+      {
+        "field": "EndMinute",
+        "populates": "AdSchedule.endMinute",
+        "filterable": false
+      },
+      {
+        "field": "FeedId",
+        "populates": "FeedItemTarget.feedId",
+        "filterable": true
+      },
+      {
+        "field": "FeedItemId",
+        "populates": "FeedItemTarget.feedItemId",
+        "filterable": true
+      },
+      {
+        "field": "Id",
+        "populates": "Criterion.id",
+        "filterable": true
+      },
+      {
+        "field": "IsNegative",
+        "populates": "FeedItemCriterionTarget.isNegative",
+        "filterable": true
+      },
+      {
+        "field": "KeywordMatchType",
+        "populates": "Keyword.matchType",
+        "filterable": true
+      },
+      {
+        "field": "KeywordText",
+        "populates": "Keyword.text",
+        "filterable": true
+      },
+      {
+        "field": "LocationName",
+        "populates": "Location.locationName",
+        "filterable": false
+      },
+      {
+        "field": "ParentCampaignName",
+        "populates": "FeedItemAdGroupTarget.parentCampaignName",
+        "filterable": true
+      },
+      {
+        "field": "ParentLocations",
+        "populates": "Location.parentLocations",
+        "filterable": false
+      },
+      {
+        "field": "PlatformName",
+        "populates": "Platform.platformName",
+        "filterable": true
+      },
+      {
+        "field": "StartHour",
+        "populates": "AdSchedule.startHour",
+        "filterable": false
+      },
+      {
+        "field": "StartMinute",
+        "populates": "AdSchedule.startMinute",
+        "filterable": false
+      },
+      {
+        "field": "Status",
+        "populates": "FeedItemTarget.status",
+        "filterable": true
+      },
+      {
+        "field": "TargetType",
+        "populates": "FeedItemTarget.targetType",
+        "filterable": true
+      },
+      {
+        "field": "TargetingStatus",
+        "populates": "Location.targetingStatus",
+        "filterable": false
+      }
+    ]
+  },
+  "feed_mappings": {
+    "get": [
+      {
+        "field": "AttributeFieldMappings",
+        "populates": "FeedMapping.attributeFieldMappings",
+        "filterable": false
+      },
+      {
+        "field": "CriterionType",
+        "populates": "FeedMapping.criterionType",
+        "filterable": true
+      },
+      {
+        "field": "FeedId",
+        "populates": "FeedMapping.feedId",
+        "filterable": true
+      },
+      {
+        "field": "FeedMappingId",
+        "populates": "FeedMapping.feedMappingId",
+        "filterable": true
+      },
+      {
+        "field": "PlaceholderType",
+        "populates": "FeedMapping.placeholderType",
+        "filterable": true
+      },
+      {
+        "field": "Status",
+        "populates": "FeedMapping.status",
+        "filterable": true
+      }
+    ]
+  },
+  "feeds": {
+    "get": [
+      {
+        "field": "Attributes",
+        "populates": "Feed.attributes",
+        "filterable": false
+      },
+      {
+        "field": "FeedStatus",
+        "populates": "Feed.status",
+        "filterable": true
+      },
+      {
+        "field": "Id",
+        "populates": "Feed.id",
+        "filterable": true
+      },
+      {
+        "field": "Name",
+        "populates": "Feed.name",
+        "filterable": true
+      },
+      {
+        "field": "Origin",
+        "populates": "Feed.origin",
+        "filterable": true
+      },
+      {
+        "field": "SystemFeedGenerationData",
+        "populates": "Feed.systemFeedGenerationData",
+        "filterable": false
+      }
+    ]
+  },
+  "labels": {
+    "get": [
+      {
+        "field": "LabelAttribute",
+        "populates": "Label.attribute",
+        "filterable": false
+      },
+      {
+        "field": "LabelId",
+        "populates": "Label.id",
+        "filterable": true
+      },
+      {
+        "field": "LabelName",
+        "populates": "Label.name",
+        "filterable": true
+      },
+      {
+        "field": "LabelStatus",
+        "populates": "Label.status",
+        "filterable": true
+      }
+    ]
+  },
+  "location_criteria": {
+    "get": [
+      {
+        "field": "CanonicalName",
+        "populates": "LocationCriterion.canonicalName",
+        "filterable": false
+      },
+      {
+        "field": "Reach",
+        "populates": "LocationCriterion.reach",
+        "filterable": false
+      }
+    ]
+  },
+  "managed_customers": {
+    "get": [
+      {
+        "field": "AccountLabels",
+        "populates": "ManagedCustomer.accountLabels",
+        "filterable": true
+      },
+      {
+        "field": "CanManageClients",
+        "populates": "ManagedCustomer.canManageClients",
+        "filterable": true
+      },
+      {
+        "field": "CurrencyCode",
+        "populates": "ManagedCustomer.currencyCode",
+        "filterable": true
+      },
+      {
+        "field": "CustomerId",
+        "populates": "ManagedCustomer.customerId",
+        "filterable": true
+      },
+      {
+        "field": "DateTimeZone",
+        "populates": "ManagedCustomer.dateTimeZone",
+        "filterable": true
+      },
+      {
+        "field": "Name",
+        "populates": "ManagedCustomer.name",
+        "filterable": true
+      },
+      {
+        "field": "TestAccount",
+        "populates": "ManagedCustomer.testAccount",
+        "filterable": false
+      }
+    ]
+  },
+  "media": {
+    "get": [
+      {
+        "field": "AdvertisingId",
+        "populates": "Video.advertisingId",
+        "filterable": true
+      },
+      {
+        "field": "CreationTime",
+        "populates": "Media.creationTime",
+        "filterable": true
+      },
+      {
+        "field": "Dimensions",
+        "populates": "Media.dimensions",
+        "filterable": false
+      },
+      {
+        "field": "DurationMillis",
+        "populates": "Audio.durationMillis",
+        "filterable": true
+      },
+      {
+        "field": "DurationMillis",
+        "populates": "Video.durationMillis",
+        "filterable": true
+      },
+      {
+        "field": "FileSize",
+        "populates": "Media.fileSize",
+        "filterable": true
+      },
+      {
+        "field": "IndustryStandardCommercialIdentifier",
+        "populates": "Video.industryStandardCommercialIdentifier",
+        "filterable": true
+      },
+      {
+        "field": "MediaId",
+        "populates": "Media.mediaId",
+        "filterable": true
+      },
+      {
+        "field": "MimeType",
+        "populates": "Media.mimeType",
+        "filterable": true
+      },
+      {
+        "field": "Name",
+        "populates": "Media.name",
+        "filterable": true
+      },
+      {
+        "field": "ReadyToPlayOnTheWeb",
+        "populates": "Audio.readyToPlayOnTheWeb",
+        "filterable": false
+      },
+      {
+        "field": "ReadyToPlayOnTheWeb",
+        "populates": "Video.readyToPlayOnTheWeb",
+        "filterable": false
+      },
+      {
+        "field": "ReferenceId",
+        "populates": "Media.referenceId",
+        "filterable": true
+      },
+      {
+        "field": "SourceUrl",
+        "populates": "Media.sourceUrl",
+        "filterable": true
+      },
+      {
+        "field": "StreamingUrl",
+        "populates": "Audio.streamingUrl",
+        "filterable": false
+      },
+      {
+        "field": "StreamingUrl",
+        "populates": "Video.streamingUrl",
+        "filterable": false
+      },
+      {
+        "field": "Type",
+        "populates": "Media.type",
+        "filterable": true
+      },
+      {
+        "field": "Urls",
+        "populates": "Media.urls",
+        "filterable": false
+      },
+      {
+        "field": "YouTubeVideoIdString",
+        "populates": "Video.youTubeVideoIdString",
+        "filterable": true
+      }
+    ]
+  },
+  "shared_criteria": {
+    "get": [
+      {
+        "field": "AppId",
+        "populates": "MobileApplication.appId",
+        "filterable": true
+      },
+      {
+        "field": "ChannelId",
+        "populates": "YouTubeChannel.channelId",
+        "filterable": false
+      },
+      {
+        "field": "ChannelName",
+        "populates": "YouTubeChannel.channelName",
+        "filterable": false
+      },
+      {
+        "field": "CriteriaType",
+        "populates": "Criterion.type",
+        "filterable": true
+      },
+      {
+        "field": "DisplayName",
+        "populates": "MobileApplication.displayName",
+        "filterable": true
+      },
+      {
+        "field": "Id",
+        "populates": "Criterion.id",
+        "filterable": true
+      },
+      {
+        "field": "KeywordMatchType",
+        "populates": "Keyword.matchType",
+        "filterable": true
+      },
+      {
+        "field": "KeywordText",
+        "populates": "Keyword.text",
+        "filterable": true
+      },
+      {
+        "field": "Negative",
+        "populates": "SharedCriterion.negative",
+        "filterable": true
+      },
+      {
+        "field": "PlacementUrl",
+        "populates": "Placement.url",
+        "filterable": true
+      },
+      {
+        "field": "SharedSetId",
+        "populates": "SharedCriterion.sharedSetId",
+        "filterable": true
+      },
+      {
+        "field": "VideoId",
+        "populates": "YouTubeVideo.videoId",
+        "filterable": false
+      },
+      {
+        "field": "VideoName",
+        "populates": "YouTubeVideo.videoName",
+        "filterable": false
+      }
+    ]
+  },
+  "shared_sets": {
+    "get": [
+      {
+        "field": "MemberCount",
+        "populates": "SharedSet.memberCount",
+        "filterable": false
+      },
+      {
+        "field": "Name",
+        "populates": "SharedSet.name",
+        "filterable": true
+      },
+      {
+        "field": "ReferenceCount",
+        "populates": "SharedSet.referenceCount",
+        "filterable": false
+      },
+      {
+        "field": "SharedSetId",
+        "populates": "SharedSet.sharedSetId",
+        "filterable": true
+      },
+      {
+        "field": "Status",
+        "populates": "SharedSet.status",
+        "filterable": true
+      },
+      {
+        "field": "Type",
+        "populates": "SharedSet.type",
+        "filterable": true
+      }
+    ]
+  },
+  "trial_async_errors": {
+    "get": [
+      {
+        "field": "AsyncError",
+        "populates": "TrialAsyncError.asyncError",
+        "filterable": false
+      },
+      {
+        "field": "BaseAdGroupId",
+        "populates": "TrialAsyncError.baseAdGroupId",
+        "filterable": false
+      },
+      {
+        "field": "BaseCampaignId",
+        "populates": "TrialAsyncError.baseCampaignId",
+        "filterable": false
+      },
+      {
+        "field": "TrialAdGroupId",
+        "populates": "TrialAsyncError.trialAdGroupId",
+        "filterable": false
+      },
+      {
+        "field": "TrialCampaignId",
+        "populates": "TrialAsyncError.trialCampaignId",
+        "filterable": false
+      },
+      {
+        "field": "TrialId",
+        "populates": "TrialAsyncError.trialId",
+        "filterable": true
+      }
+    ]
+  },
+  "trials": {
+    "get": [
+      {
+        "field": "BaseCampaignId",
+        "populates": "Trial.baseCampaignId",
+        "filterable": true
+      },
+      {
+        "field": "DraftId",
+        "populates": "Trial.draftId",
+        "filterable": true
+      },
+      {
+        "field": "EndDate",
+        "populates": "Trial.endDate",
+        "filterable": true
+      },
+      {
+        "field": "Id",
+        "populates": "Trial.id",
+        "filterable": true
+      },
+      {
+        "field": "Name",
+        "populates": "Trial.name",
+        "filterable": true
+      },
+      {
+        "field": "StartDate",
+        "populates": "Trial.startDate",
+        "filterable": true
+      },
+      {
+        "field": "Status",
+        "populates": "Trial.status",
+        "filterable": true
+      },
+      {
+        "field": "TrafficSplitPercent",
+        "populates": "Trial.trafficSplitPercent",
+        "filterable": true
+      },
+      {
+        "field": "TrialCampaignId",
+        "populates": "Trial.trialCampaignId",
+        "filterable": true
+      }
+    ]
+  }
+}

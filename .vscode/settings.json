@@ -1,0 +1,9 @@
+{
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "editor.formatOnSaveTimeout": 2000,
+  "ruby.format": "rubocop",
+  "ruby.lint": {
+    "rubocop": true
+  }
+}

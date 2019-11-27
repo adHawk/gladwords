@@ -1,0 +1,21 @@
+{
+  "version": "2.0.0",
+  "runner": "terminal",
+  "tasks": [
+    {
+      "label": "rspec - current line",
+      "type": "shell",
+      "command": "${workspaceRoot}/bin/rspec ${relativeFile}:${lineNumber}"
+    },
+    {
+      "label": "rspec - current file",
+      "type": "shell",
+      "command": "${workspaceRoot}/bin/rspec ${relativeFile}"
+    },
+    {
+      "label": "rspec - whole suite",
+      "type": "shell",
+      "command": "${workspaceRoot}/bin/rspec"
+    }
+  ]
+}

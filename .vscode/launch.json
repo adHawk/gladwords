@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "RSpec - active spec file only",
+      "request": "launch",
+      "cwd": "${workspaceRoot}",
+      "program": "${workspaceRoot}/bin/rspec",
+      "args": ["${file}:${lineNumber}"],
+      "type": "Ruby"
+    }
+  ]
+}

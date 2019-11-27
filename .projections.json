@@ -1,0 +1,5 @@
+{
+  "lib/gladwords/*.rb": { "alternate": "spec/unit/{}_spec.rb" },
+  "spec/unit/*_spec.rb": { "alternate": "lib/gladwords/{}.rb" },
+  "spec/integration/*_spec.rb": { "alternate": "lib/gladwords/{}.rb" }
+}
