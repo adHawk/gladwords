@@ -28,5 +28,6 @@ RSpec.configure do |config|
   config.filter_run_when_matching :focus
   config.example_status_persistence_file_path = 'tmp/examples.txt'
   config.order = :random
+  config.formatter = :documentation
   Kernel.srand config.seed
 end

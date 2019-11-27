@@ -8,7 +8,6 @@ jobs:
           BUNDLE_JOBS: "3"
           BUNDLE_RETRY: "3"
           BUNDLE_PATH: vendor/bundle
-          BUNDLE_WITHOUT: "local"
     steps:
       - checkout
 
@@ -19,7 +18,7 @@ jobs:
 
       - run:
           name: Bundle Install
-          command: bundle check || bundle install
+          command: bundle check || bundle install --without local
 
       - save_cache:
           key: gladwords-bundle-v2-{{ checksum "Gemfile.lock" }}
@@ -27,11 +26,9 @@ jobs:
             - vendor/bundle
 
       - run:
-          name: Run rspec
-          command: |
-            bundle exec rspec --format documentation
+          name: Run specs
+          command: bin/rake spec
 
       - run:
-          name: Run rubocop
-          command: |
-            bundle exec rubocop
+          name: Run lints
+          command: bin/rake lint
