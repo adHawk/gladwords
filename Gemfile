@@ -8,6 +8,7 @@ group :test do
   gem 'google-adwords-api', github: 'ianks/google-api-ads-ruby', branch: 'enums-generated'
   gem 'pry-byebug'
   gem 'rspec'
+  gem 'codacy-coverage', require: false
 end
 
 group :development, :test do
